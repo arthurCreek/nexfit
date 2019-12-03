@@ -1,0 +1,1 @@
+export default () => (<div>Mens Mid Layer</div>);

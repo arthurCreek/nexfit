@@ -1,0 +1,1 @@
+export default () => (<div>Hell Next.js</div>);

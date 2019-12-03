@@ -1,0 +1,1 @@
+export default () => (<div>Shop Mens</div>);
