@@ -32,7 +32,7 @@ const index = () => (
                 </div>
 
                 <div className="home__row">
-                    <div className="hom__image-area">
+                    <div className="home__image-area">
                         <img src="/man_main.jpg" alt="main woman" className="home-image"/>
                     </div>
                     <div className="home__text-area home__text-area--men">
