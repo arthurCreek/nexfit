@@ -13,94 +13,94 @@ const Men = () => (
             </div>
         </div>
 
-        <section className="section-men">
-            <div className="men__container">
-                <div className="men__row">
-                    <div className="men__image-area">
-                        <img src="/men/jacket/men_mount_parka_dark.jpg" alt="main woman" className="men-image"/>
+        <section className="section-gender">
+            <div className="gender__container">
+                <div className="gender__row">
+                    <div className="gender__image-area">
+                        <img src="/men/jacket/men_mount_parka_dark.jpg" alt="main woman" className="gender-image"/>
                     </div>
-                    <div className="men__text-area">
-                        <h3>Revolutionary Outdoor Gear</h3>
-                        <p>Born from necessity, driven by design, the best insulation in any gear.</p>
-                        <Link href="/women"><a className="men__link">Show Women's</a></Link>
+                    <div className="gender__text-area">
+                        <h3>The Mount Parka</h3>
+                        <p>Uncomprimised warmth, the latest in our pursiot of warmer insulation.</p>
+                        <Link href="/women"><a className="gender__link gender__link--gender-item">SHOP MOUNT</a></Link>
                     </div>
 
                 </div>
 
-                <div className="men__row">
-                    <div className="men__image-area">
-                        <img src="/men/jacket/men_oakley_jacket_dark.jpg" alt="main woman" className="men-image"/>
+                <div className="gender__row">
+                    <div className="gender__image-area">
+                        <img src="/men/jacket/men_oakley_jacket_dark.jpg" alt="main woman" className="gender-image"/>
                     </div>
-                    <div className="men__text-area">
-                        <h3>Engineered to Move</h3>
-                        <p>Improvents in insulation equals less layers.  Better warmth, better mobility.</p>
-                        <Link href="/men"><a className="men__link">Show Men's</a></Link>
-                    </div>
-                </div>
-
-                <div className="men__row">
-                    <div className="men__image-area">
-                        <img src="/men/mid_layer/apollo_vest.jpg" alt="men about woman" className="men-image"/>
-                    </div>
-                    <div className="men__text-area">
-                        <h3>It's in our DNA.</h3>
-                        <p>We created what we wanted to wear, now we share it with you.</p>
-                        <Link href="/aboutus"><a className="men__link">About Us</a></Link>
+                    <div className="gender__text-area">
+                        <h3>The Oakley Jacket</h3>
+                        <p>Easily meets your needs in any environment with mobility and warmth.</p>
+                        <Link href="/men"><a className="gender__link gender__link--gender-item">SHOP OAKLEY</a></Link>
                     </div>
                 </div>
 
-                <div className="men__row">
-                    <div className="men__image-area">
-                        <img src="/men/mid_layer/explore_zip_dark.jpg" alt="men about woman" className="men-image"/>
+                <div className="gender__row">
+                    <div className="gender__image-area">
+                        <img src="/men/mid_layer/apollo_vest.jpg" alt="men about woman" className="gender-image"/>
                     </div>
-                    <div className="men__text-area">
-                        <h3>It's in our DNA.</h3>
-                        <p>We created what we wanted to wear, now we share it with you.</p>
-                        <Link href="/aboutus"><a className="men__link">About Us</a></Link>
-                    </div>
-                </div>
-
-                <div className="men__row">
-                    <div className="men__image-area">
-                        <img src="/men/bottoms/men_enduring_dark.jpg" alt="men about woman" className="men-image"/>
-                    </div>
-                    <div className="men__text-area">
-                        <h3>It's in our DNA.</h3>
-                        <p>We created what we wanted to wear, now we share it with you.</p>
-                        <Link href="/aboutus"><a className="men__link">About Us</a></Link>
+                    <div className="gender__text-area">
+                        <h3>The Apollo Vest</h3>
+                        <p>Protect your core without overheating; our updated take on the performance vest.</p>
+                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP APOLLO</a></Link>
                     </div>
                 </div>
 
-                <div className="men__row">
-                    <div className="men__image-area">
-                        <img src="/tee.jpg" alt="men about woman" className="men-image"/>
+                <div className="gender__row">
+                    <div className="gender__image-area">
+                        <img src="/men/mid_layer/explore_zip_dark.jpg" alt="men about woman" className="gender-image"/>
                     </div>
-                    <div className="men__text-area">
-                        <h3>It's in our DNA.</h3>
-                        <p>We created what we wanted to wear, now we share it with you.</p>
-                        <Link href="/aboutus"><a className="men__link">About Us</a></Link>
-                    </div>
-                </div>
-
-                <div className="men__row">
-                    <div className="men__image-area">
-                        <img src="/beanie_gray.jpg" alt="men about woman" className="men-image"/>
-                    </div>
-                    <div className="men__text-area">
-                        <h3>It's in our DNA.</h3>
-                        <p>We created what we wanted to wear, now we share it with you.</p>
-                        <Link href="/aboutus"><a className="men__link">About Us</a></Link>
+                    <div className="gender__text-area">
+                        <h3>The Explore Zip</h3>
+                        <p>We redefined the 1/4 zip, this one does it all and it's better than before.</p>
+                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP EXPLORE</a></Link>
                     </div>
                 </div>
 
-                <div className="men__row">
-                    <div className="men__image-area">
-                        <img src="/men/accessories/men_mittens.jpg" alt="men about woman" className="men-image"/>
+                <div className="gender__row">
+                    <div className="gender__image-area">
+                        <img src="/men/bottoms/men_enduring_dark.jpg" alt="men about woman" className="gender-image"/>
                     </div>
-                    <div className="men__text-area">
-                        <h3>It's in our DNA.</h3>
-                        <p>We created what we wanted to wear, now we share it with you.</p>
-                        <Link href="/aboutus"><a className="men__link">About Us</a></Link>
+                    <div className="gender__text-area">
+                        <h3>The Enduring Pant</h3>
+                        <p>Show your legs some love - our best insulation tech into pants to keep you dry.</p>
+                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP ENDURING</a></Link>
+                    </div>
+                </div>
+
+                <div className="gender__row">
+                    <div className="gender__image-area">
+                        <img src="/tee.jpg" alt="men about woman" className="gender-image"/>
+                    </div>
+                    <div className="gender__text-area">
+                        <h3>Men's Tee</h3>
+                        <p>Fully organic cotton tee, comfy, warm and looking your best.</p>
+                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP TEE</a></Link>
+                    </div>
+                </div>
+
+                <div className="gender__row">
+                    <div className="gender__image-area">
+                        <img src="/beanie_gray.jpg" alt="men about woman" className="gender-image"/>
+                    </div>
+                    <div className="gender__text-area">
+                        <h3>The Beanie</h3>
+                        <p>Designed to keep your head toasty and your outing on track.</p>
+                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP BEANIE</a></Link>
+                    </div>
+                </div>
+
+                <div className="gender__row">
+                    <div className="gender__image-area">
+                        <img src="/men/accessories/men_mittens.jpg" alt="men about woman" className="gender-image"/>
+                    </div>
+                    <div className="gender__text-area">
+                        <h3>The Mitten</h3>
+                        <p>A complete seal from the elements for days when cold digits are not an option.</p>
+                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP MITTENS</a></Link>
                     </div>
                 </div>
             </div>

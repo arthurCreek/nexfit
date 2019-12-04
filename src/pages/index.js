@@ -13,8 +13,8 @@ const index = () => (
             </div>
 
             <div className="hero__link-div">
-                <Link href="/men"><a className="hero__link">Shop Mens</a></Link>
-                <Link href="/women"><a className="hero__link">Show Womens</a></Link>
+                <Link href="/men"><a className="hero__link">Shop Men's</a></Link>
+                <Link href="/women"><a className="hero__link">Show Women's</a></Link>
             </div>
         </div>
 
@@ -24,7 +24,7 @@ const index = () => (
                     <div className="home__text-area">
                         <h3>Revolutionary Outdoor Gear</h3>
                         <p>Born from necessity, driven by design, the best insulation in any gear.</p>
-                        <Link href="/women"><a className="home__link">Show Women's</a></Link>
+                        <Link href="/women"><a className="home__link home__link--item">Show Women's</a></Link>
                     </div>
                     <div className="home__image-area">
                         <img src="/woman_main.jpg" alt="main woman" className="home-image"/>
@@ -38,7 +38,7 @@ const index = () => (
                     <div className="home__text-area home__text-area--men">
                         <h3>Engineered to Move</h3>
                         <p>Improvents in insulation equals less layers.  Better warmth, better mobility.</p>
-                        <Link href="/men"><a className="home__link">Show Men's</a></Link>
+                        <Link href="/men"><a className="home__link home__link--item">Show Men's</a></Link>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@ const index = () => (
                     <div className="home__text-area">
                         <h3>It's in our DNA.</h3>
                         <p>We created what we wanted to wear, now we share it with you.</p>
-                        <Link href="/aboutus"><a className="home__link">About Us</a></Link>
+                        <Link href="/aboutus"><a className="home__link home__link--item">About Us</a></Link>
                     </div>
                     <div className="home__image-area">
                         <img src="/woman_about.jpg" alt="home about woman" className="home-image"/>

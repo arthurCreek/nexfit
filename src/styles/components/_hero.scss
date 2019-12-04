@@ -1,13 +1,12 @@
 .hero,  
 .hero-sub--contact {
-    height: 65vh;
+    height: 70vh;
     // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(.././images/gtr.jpg);
     // background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(251, 86, 3, 0.6)), to(rgba(251, 86, 3, 0.3))),url(../../../public/hero.jpg);
-    background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.2)),url("/hero.jpg");
+    background-image: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0, 0.1)),url("/hero.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
-    background-attachment: fixed;
     // display: flex;
     // justify-content: center;
     // align-items: center;
@@ -16,6 +15,10 @@
     &--sub {
         background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.2)),url("/men_main.jpg");
         background-position: bottom;
+
+        &-women {
+            background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.2)),url("/women_main.jpg");
+        }
     }
 
     @include respond(phone){
@@ -55,12 +58,13 @@
 
     &__link {
         text-decoration: none;
-        color: white;
         padding: 2rem;
-        background: blue;
+        color: white;
+        // background: $color-blue-light;
+        background: hsla(0,0%,100%,.25);
         margin: 2rem;
         font-size: 2em;
-        border-radius: 10px;
+        // border-radius: 10px;
     }
 
 }

@@ -1,42 +1,45 @@
-.section-home {
+.section-gender {
     margin: 0 0 100px;
+    display: flex;
+    justify-content: center;
 }
 
-.home__container {
-    max-width: 1140px;
+.gender__container {
     margin-right: auto;
     margin-left: auto;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem 15rem;
+    margin-top: 10rem;
 }
 
-.home {
+.gender {
     margin: 0 0 80px;
 
     &__row {
         display: flex;
         justify-content: space-around;
-        margin-top: 10rem;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__text-area {
         display: flex;
         flex-direction: column;
-        width: 50%;
-        justify-content: center;
-        text-align: left;
 
-        &--men {
+        &--gender {
             padding-left: 7rem;
         }
 
         & > h3 {
             font-size: 3em;
-            text-align: left;
+            text-align: center;
         }
 
         & > p {
             font-size: 2em;
-            width: 40rem;
-            text-align: left;
+            width: 45rem;
+            text-align: center;
         }
 
         & > a {
@@ -47,24 +50,22 @@
 
     &__link {
         text-decoration: none;
-        padding: 2rem;
         color: $color-blue-dark;
+        padding: 2rem;
         background: $color-blue-light;
         font-size: 2em;
-        // border-radius: 10px;
+        border-radius: 10px;
         margin-top: 4rem;
 
-        &--item {
+        &--gender-item {
             padding: 1rem;
             font-size: 1.3em;
+            margin: 2rem auto;
             border-radius: 0;
-            margin-top: 2rem;
-            color: $color-blue-dark;
-            background: $color-blue-light;
         }
     }
 }
 
-.home-image {
-    width: 50rem;
+.gender-image {
+    width: 45rem;
 }

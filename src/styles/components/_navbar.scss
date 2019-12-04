@@ -1,3 +1,8 @@
 .header {
-    background: blue;
+    background: $color-black;
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
 }
