@@ -1,12 +1,13 @@
 
 import Navbar from './navbar/Navbar';
+import '../styles/styles.scss';
 
 const Layout = (props) => {
 
     return (
         <div>
             <Navbar />
-            {props.children}
+            <main>{props.children}</main>
         </div>
     )
 
