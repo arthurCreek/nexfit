@@ -1,0 +1,99 @@
+.radio-toolbar {
+  margin: 10px;
+}
+
+.radio-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    padding: 12px 12px;
+    margin-right: 1rem;
+    border: 2px solid #444;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.dark {
+  background-color: #222;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.green {
+  background-color: green;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.burgundy {
+  background-color: rgb(116, 30, 51);
+}
+
+/* .radio-toolbar label:hover {
+  background-color: #dfd;
+} */
+
+.radio-toolbar input[type="radio"]:focus + label {
+    border: 2px solid black;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: #f7f7f7;
+    background-image: url(/icons/done-24px.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sizes-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.size-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.size-toolbar label {
+  display: inline-block;
+  padding: 2px .6rem;
+  font-size: 1.5em;
+  margin-right: 1rem;
+  border: 2px solid #444;
+  border-radius: 45%;
+  cursor: pointer;
+}
+
+.size-toolbar input[type="radio"]:focus + label {
+  border: 2px solid #ff4721;
+  color: #ff4721;
+}
+
+.size-toolbar input[type="radio"]:checked + label {
+  border: 2px solid #ff4721;
+  color: #ff4721;
+}
+
+
+.color-size-container {
+  display: flex;
+  align-items: center;
+}

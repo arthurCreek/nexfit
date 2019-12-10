@@ -22,7 +22,7 @@ const Women = () => (
                     <div className="gender__text-area">
                         <h3>The Mount Parka</h3>
                         <p>Uncomprimised warmth, the latest in our pursiot of warmer insulation.</p>
-                        <Link href="/women"><a className="gender__link gender__link--gender-item">SHOP MOUNT</a></Link>
+                        <Link href="/womens/jacket/mount-parka"><a className="gender__link gender__link--gender-item">SHOP MOUNT</a></Link>
                     </div>
 
                 </div>
@@ -34,7 +34,7 @@ const Women = () => (
                     <div className="gender__text-area">
                         <h3>The Oakley Jacket</h3> 
                         <p>Elevated technology for 2019, nothing but the best.</p>
-                        <Link href="/men"><a className="gender__link gender__link--gender-item">SHOP OAKLEY</a></Link>
+                        <Link href="/womens/jacket/oakley-jacket"><a className="gender__link gender__link--gender-item">SHOP OAKLEY</a></Link>
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@ const Women = () => (
                     <div className="gender__text-area">
                         <h3>The Enduring Jacket</h3> 
                         <p>Easily meets your needs in any environment with mobility and warmth.</p>
-                        <Link href="/men"><a className="gender__link gender__link--gender-item">SHOP ENDURING</a></Link>
+                        <Link href="/womens/jacket/enduring-jacket"><a className="gender__link gender__link--gender-item">SHOP ENDURING</a></Link>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@ const Women = () => (
                     <div className="gender__text-area">
                         <h3>The Explore Zip</h3>
                         <p>Thinner, lighter, and our favorite layering for on the move.</p>
-                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP EXPLORE</a></Link>
+                        <Link href="/womens/mid-layer/explore-zip"><a className="gender__link gender__link--gender-item">SHOP EXPLORE</a></Link>
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@ const Women = () => (
                     <div className="gender__text-area">
                         <h3>The Enduring Pant</h3>
                         <p>Back and better than ever, full protection and warmth for days.</p>
-                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP ENDURING</a></Link>
+                        <Link href="/womens/bottoms/enduring-pant"><a className="gender__link gender__link--gender-item">SHOP ENDURING</a></Link>
                     </div>
                 </div>
 
@@ -78,7 +78,7 @@ const Women = () => (
                     <div className="gender__text-area">
                         <h3>The Leggings</h3>
                         <p>For when you need the extra warmth to get active on the chillest of days.</p>
-                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP LEGGINGS</a></Link>
+                        <Link href="/womens/bottoms/leggings"><a className="gender__link gender__link--gender-item">SHOP LEGGINGS</a></Link>
                     </div>
                 </div>
 
@@ -89,7 +89,7 @@ const Women = () => (
                     <div className="gender__text-area">
                         <h3>The Tee</h3>
                         <p>Fully organic cotton tee, comfy, warm and looking your best.</p>
-                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP TEE</a></Link>
+                        <Link href="/womens/accessories/tee"><a className="gender__link gender__link--gender-item">SHOP TEE</a></Link>
                     </div>
                 </div>
 
@@ -100,7 +100,7 @@ const Women = () => (
                     <div className="gender__text-area">
                         <h3>The Beanie</h3>
                         <p>Designed to keep your head toasty and your outing on track.</p>
-                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP BEANIE</a></Link>
+                        <Link href="/womens/accessories/beanie"><a className="gender__link gender__link--gender-item">SHOP BEANIE</a></Link>
                     </div>
                 </div>
 
@@ -111,7 +111,7 @@ const Women = () => (
                     <div className="gender__text-area">
                         <h3>The Mitten</h3>
                         <p>A complete seal from the elements for days when cold digits are not an option.</p>
-                        <Link href="/aboutus"><a className="gender__link gender__link--gender-item">SHOP MITTENS</a></Link>
+                        <Link href="/womens/accessories/mittens"><a className="gender__link gender__link--gender-item">SHOP MITTENS</a></Link>
                     </div>
                 </div>
             </div>
