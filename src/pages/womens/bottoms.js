@@ -20,7 +20,7 @@ const WomensBottoms = () => (
                     <div className="home__text-area">
                         <h3>The Enduring Pant</h3>
                         <p>Back and better than ever, full protection and warmth for days.</p>
-                        <Link href="/women"><a className="home__link home__link--item">SHOP ENDURING</a></Link>
+                        <Link href="/womens/bottoms/enduring-pant"><a className="home__link home__link--item">SHOP ENDURING</a></Link>
                     </div>
                     <div className="home__image-area">
                         <img src="/women/bottoms/women_enduring_dark.jpg" alt="main woman" className="home-image"/>
@@ -34,7 +34,7 @@ const WomensBottoms = () => (
                     <div className="home__text-area home__text-area--men">
                         <h3>The Leggings</h3>
                         <p>For when you need the extra warmth to get active on the chillest of days.</p>
-                        <Link href="/men"><a className="home__link home__link--item">SHOP LEGGINGS</a></Link>
+                        <Link href="/womens/bottoms/leggings"><a className="home__link home__link--item">SHOP LEGGINGS</a></Link>
                     </div>
                 </div>
             </div>

@@ -20,7 +20,7 @@ const MensJackets = () => (
                     <div className="home__text-area">
                         <h3>The Mount Parka</h3>
                         <p>Uncomprimised warmth, the latest in our pursiot of warmer insulation.</p>
-                        <Link href="/women"><a className="home__link home__link--item">SHOP MOUNT</a></Link>
+                        <Link href="/mens/jacket/parka"><a className="home__link home__link--item">SHOP MOUNT</a></Link>
                     </div>
                     <div className="home__image-area">
                         <img src="/men/jacket/men_mount_parka_dark.jpg" alt="main woman" className="home-image"/>
@@ -34,7 +34,7 @@ const MensJackets = () => (
                     <div className="home__text-area home__text-area--men">
                         <h3>The Oakley Jacket</h3>
                         <p>Easily meets your needs in any environment with mobility and warmth.</p>
-                        <Link href="/men"><a className="home__link home__link--item">SHOP OAKLEY</a></Link>
+                        <Link href="/mens/jacket/parka"><a className="home__link home__link--item">SHOP OAKLEY</a></Link>
                     </div>
                 </div>
 

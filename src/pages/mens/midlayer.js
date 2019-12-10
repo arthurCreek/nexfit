@@ -20,7 +20,7 @@ const MensMidLayer = () => (
                     <div className="home__text-area">
                         <h3>The Apollo Vest</h3>
                         <p>Protect your core without overheating; our updated take on the performance vest.</p>
-                        <Link href="/women"><a className="home__link home__link--item">SHOP APOLLO</a></Link>
+                        <Link href="/mens/mid-layer/apollo"><a className="home__link home__link--item">SHOP APOLLO</a></Link>
                     </div>
                     <div className="home__image-area">
                         <img src="/men/mid_layer/apollo_vest.jpg" alt="main woman" className="home-image"/>
@@ -34,7 +34,7 @@ const MensMidLayer = () => (
                     <div className="home__text-area home__text-area--men">
                         <h3>The Explore Zip</h3>
                         <p>We redefined the 1/4 zip, this one does it all and it's better than before.</p>
-                        <Link href="/men"><a className="home__link home__link--item">SHOP EXPLORE</a></Link>
+                        <Link href="/mens/mid-layer/explore-zip"><a className="home__link home__link--item">SHOP EXPLORE</a></Link>
                     </div>
                 </div>
 

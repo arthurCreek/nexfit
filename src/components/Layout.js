@@ -11,7 +11,7 @@ const Layout = (props) => {
         const items = JSON.parse(localStorage.getItem('items'));
 
         if (items) {
-            console.log(items);
+            dispatch({ type: 'POPULATE_CART', items});
         }
     }, [])
 

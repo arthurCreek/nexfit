@@ -3,9 +3,6 @@ import CartContext from '../../../context/cart-context';
 import Layout from '../../../components/Layout';
 
 
-
-
-
 const MenOakleyJacket = () => {
     const { items, dispatch } = useContext(CartContext);
 
@@ -56,7 +53,6 @@ const MenOakleyJacket = () => {
         } else {
             addItemToCart();
         }
-        // addItemToCart();
     }
     
     function setSize(e) {

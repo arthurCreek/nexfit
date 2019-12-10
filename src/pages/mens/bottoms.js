@@ -20,7 +20,7 @@ const MensBottoms = () => (
                     <div className="home__text-area">
                         <h3>The Enduring Pant</h3>
                         <p>Show your legs some love - our best insulation tech into pants to keep you dry.</p>
-                        <Link href="/women"><a className="home__link home__link--item">SHOP ENDURING</a></Link>
+                        <Link href="/mens/bottoms/enduring-pant"><a className="home__link home__link--item">SHOP ENDURING</a></Link>
                     </div>
                     <div className="home__image-area">
                         <img src="/men/bottoms/men_enduring_dark.jpg" alt="main woman" className="home-image"/>

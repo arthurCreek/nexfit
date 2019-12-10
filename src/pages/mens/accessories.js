@@ -20,7 +20,7 @@ const MensAccessories = () => (
                     <div className="home__text-area">
                         <h3>Men's Tee</h3>
                         <p>Fully organic cotton tee, comfy, warm and looking your best.</p>
-                        <Link href="/women"><a className="home__link home__link--item">SHOP TEE</a></Link>
+                        <Link href="/mens/accessories/tee"><a className="home__link home__link--item">SHOP TEE</a></Link>
                     </div>
                     <div className="home__image-area">
                         <img src="/tee.jpg" alt="main woman" className="home-image"/>
@@ -34,7 +34,7 @@ const MensAccessories = () => (
                     <div className="home__text-area home__text-area--men">
                         <h3>The Beanie</h3>
                         <p>Designed to keep your head toasty and your outing on track.</p>
-                        <Link href="/men"><a className="home__link home__link--item">SHOP BEANIE</a></Link>
+                        <Link href="/mens/accessories/beanie"><a className="home__link home__link--item">SHOP BEANIE</a></Link>
                     </div>
                 </div>
 
@@ -42,7 +42,7 @@ const MensAccessories = () => (
                     <div className="home__text-area">
                         <h3>The Mitten</h3>
                         <p>A complete seal from the elements for days when cold digits are not an option.</p>
-                        <Link href="/women"><a className="home__link home__link--item">SHOP MITTENS</a></Link>
+                        <Link href="/mens/accessories/mittens"><a className="home__link home__link--item">SHOP MITTENS</a></Link>
                     </div>
                     <div className="home__image-area">
                         <img src="/men/accessories/men_mittens.jpg" alt="main woman" className="home-image"/>

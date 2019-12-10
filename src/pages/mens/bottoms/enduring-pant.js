@@ -1,16 +1,61 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import CartContext from '../../../context/cart-context';
 import Layout from '../../../components/Layout';
 
 
 
-
 const MenEnduringPant = () => {
+    const { items, dispatch } = useContext(CartContext);
 
+    const name = 'The Enduring Pant';
     const [colorSelected, setColorSelected] = useState('dark');
     const [imgSrc, setImgSrc] = useState('/men/bottoms/men_enduring_dark.jpg');
     const [size, setProductSize] = useState('s');
 
+    function addItemToCart() {
+        dispatch({
+            type: 'ADD_ITEM',
+            data: {
+                name,
+                imgSrc,
+                colorSelected,
+                size,
+                amount: 1
+            }
+        })
+    }
 
+    function editCartItem(amount) {
+        dispatch({
+            type: 'EDIT_ITEM',
+            data: {
+                name,
+                imgSrc,
+                colorSelected,
+                size,
+                amount: amount
+            }
+        })
+    }
+
+    function inList() {
+        if(items.length > 0){
+            let found = false;
+            items.forEach(item => {
+                if(item.name === name && item.imgSrc === imgSrc && item.size === size) {
+                    editCartItem(1);
+                    found = true
+                    return;
+                }
+            });
+            if (!found) {
+                addItemToCart();
+            }
+        } else {
+            addItemToCart();
+        }
+    }
+    
     function setSize(e) {
         if(e.target.value != size) {
             switch (e.target.value) {
@@ -57,7 +102,7 @@ const MenEnduringPant = () => {
     }
 
     return (
-        <Layout>
+        <div>
             <div className="home__row">
                 <div className="home__image-area">
                     <img src={imgSrc} alt="main woman" className="home-image"/>
@@ -69,7 +114,7 @@ const MenEnduringPant = () => {
                 
                 <div className="color-size-container">
                     <div className="radio-toolbar">
-                        <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark"/>
+                        <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark" defaultChecked/>
                         <label className="dark" htmlFor="radioDark"></label>
                     </div>
                     <div className="radio-toolbar">
@@ -102,11 +147,11 @@ const MenEnduringPant = () => {
                     </div>
                 </div>
                     <div className="btn-add-container">
-                        <a className="btn-add">ADD TO CART</a>
+                        <a className="btn-add" onClick={inList}>ADD TO CART</a>
                     </div>
                 </div>
             </div>
-        </Layout>
+        </div>
     )
 };
 

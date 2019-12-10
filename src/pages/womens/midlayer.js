@@ -20,7 +20,7 @@ const WomensJackets = () => (
                     <div className="home__text-area">
                         <h3>The Explore Zip</h3>
                         <p>Thinner, lighter, and our favorite layering for on the move.</p>
-                        <Link href="/women"><a className="home__link home__link--item">SHOP EXPLORE</a></Link>
+                        <Link href="/womens/mid-layer/explore-zip"><a className="home__link home__link--item">SHOP EXPLORE</a></Link>
                     </div>
                     <div className="home__image-area">
                         <img src="/women/mid_layer/women_explore_zip_dark.jpg" alt="main woman" className="home-image"/>
