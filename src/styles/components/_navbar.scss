@@ -1,6 +1,7 @@
 .header {
     background: $color-black;
     min-height: 80px;
+    max-height: 85px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -8,6 +9,8 @@
 
     &__menu-logo {
         cursor: pointer;
+        height: 50px;
+        width: 40px;
     }
 
     &__shopping-cart {
@@ -18,13 +21,19 @@
 .heaver__brand{
     text-decoration: none;
     color: white;
-    font-size: 3em;
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .header__container {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 4rem;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-height: 80px;
+    
 }
 
 .cart_notification {
@@ -64,7 +73,7 @@
         top: 0;
         left: -270px;
         width: 260px;
-        background-color: #f7f7f7;
+        background-color: #222;
         height: 100%;
         padding: 18px 0 80px;
         transition: left .3s ease-out;
@@ -104,7 +113,16 @@
 
 .menu__link {
     text-decoration: none;
-    color: black;
+    color: white;
+
+    &--item {
+        color: #bcdeed;
+    }
+}
+
+.menu__link:hover,
+.menu__link:active {
+    color: rgb(223, 15, 15);
 }
 
 .cart__content {

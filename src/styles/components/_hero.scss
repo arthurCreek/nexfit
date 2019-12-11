@@ -1,16 +1,11 @@
 .hero,  
 .hero-sub--contact {
     height: 70vh;
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(.././images/gtr.jpg);
-    // background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(251, 86, 3, 0.6)), to(rgba(251, 86, 3, 0.3))),url(../../../public/hero.jpg);
     background-image: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0, 0.1)),url("/hero.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-direction: column;
+    margin-top: 79px;
 
     &--sub {
         background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.2)),url("/men_main.jpg");
@@ -34,16 +29,6 @@
     &::before {
         background-color: rgba(0, 0, 0, 0.7);
     }
-
-    // &__logo-box {
-    //     position: absolute;
-    //     top: 4rem;
-    //     left: 4rem;
-    // }
-
-    // &__logo {
-    //     height: 3.5rem;
-    // }
     
     &__text-box {
         color: white;
@@ -54,24 +39,19 @@
         width: 100%;
         padding: 0 10px;
 
-
         @include respond(phone){
             top: 65%
         }
-
     }
 
     &__link {
         text-decoration: none;
         padding: 2rem;
         color: white;
-        // background: $color-blue-light;
         background: hsla(0,0%,100%,.25);
         margin: 2rem;
         font-size: 2em;
-        // border-radius: 10px;
     }
-
 }
 
 .hero-primary {

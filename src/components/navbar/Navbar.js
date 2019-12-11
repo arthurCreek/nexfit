@@ -55,24 +55,24 @@ const Navbar = () => {
             </header>
 
             <div className="menu__drawer">
-                <a href="#" ><img src="/icons/close.png" alt="close sidebar menu" className="menu__drawer-close" onClick={menuToggle}/></a>
+                <a href="#" ><img src="/icons/close_white.png" alt="close sidebar menu" className="menu__drawer-close" onClick={menuToggle}/></a>
                 <div className="menu__drawer-container">
                     <div className="menu__list-container">
                         <h2><Link href="/men"><a className="menu__link">MEN</a></Link></h2>
                         <ul className="menu__list">
-                            <li><Link href="/mens/jackets"><a className="menu__link">JACKETS</a></Link></li>
-                            <li><Link href="/mens/midlayer"><a className="menu__link">MID-LAYERS</a></Link></li>
-                            <li><Link href="/mens/bottoms"><a className="menu__link">BOTTOMS</a></Link></li>
-                            <li><Link href="/mens/accessories"><a className="menu__link">ACCESSORIES</a></Link></li>
+                            <li><Link href="/mens/jackets"><a className="menu__link menu__link--item">JACKETS</a></Link></li>
+                            <li><Link href="/mens/midlayer"><a className="menu__link menu__link--item">MID-LAYERS</a></Link></li>
+                            <li><Link href="/mens/bottoms"><a className="menu__link menu__link--item">BOTTOMS</a></Link></li>
+                            <li><Link href="/mens/accessories"><a className="menu__link menu__link--item">ACCESSORIES</a></Link></li>
                         </ul>
                     </div>
                     <div className="menu__list-container">
                         <h2><Link href="/women"><a className="menu__link">WOMEN</a></Link></h2>
                         <ul className="menu__list">
-                            <li><Link href="/womens/jackets"><a className="menu__link">JACKETS</a></Link></li>
-                            <li><Link href="/womens/midlayer"><a className="menu__link">MID-LAYERS</a></Link></li>
-                            <li><Link href="/womens/bottoms"><a className="menu__link">BOTTOMS</a></Link></li>
-                            <li><Link href="/womens/accessories"><a className="menu__link">ACCESSORIES</a></Link></li>
+                            <li><Link href="/womens/jackets"><a className="menu__link menu__link--item">JACKETS</a></Link></li>
+                            <li><Link href="/womens/midlayer"><a className="menu__link menu__link--item">MID-LAYERS</a></Link></li>
+                            <li><Link href="/womens/bottoms"><a className="menu__link menu__link--item">BOTTOMS</a></Link></li>
+                            <li><Link href="/womens/accessories"><a className="menu__link menu__link--item">ACCESSORIES</a></Link></li>
                         </ul>
                     </div>
                     <h2><Link href="/aboutus"><a className="menu__link">ABOUT US</a></Link></h2>
