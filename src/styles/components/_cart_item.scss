@@ -6,6 +6,10 @@
 .cart-item__container {
     display: flex;
     font-size: 1.7em;
+
+    &--final {
+        margin-bottom: 3rem;
+    }
 }
 
 .cart-item__image-amount {
