@@ -109,29 +109,40 @@ const MenExploreZip = () => {
 
     return (
         <div>
-            <div className="home__row">
-                <div className="home__image-area">
-                    <img src={imgSrc} alt="main woman" className="home-image"/>
+            <div className="product__row">
+                <div className="product__image-area">
+                    <img src={imgSrc} alt="main woman" className="product-image"/>
                 </div>
-                <div className="home__text-area">
+                <div className="product__text-area">
                     <h3>The Explore Zip</h3>
-                    <p>${cost}.00</p>
-                    <p>We redefined the 1/4 zip, this one does it all and it's better than before.</p>
+                    <p className="product__cost">$ {cost}.00</p>
+                    <p className="product__description">Our award-winning, do-it-all layer, back and better than ever before.
+                    In winter, the earth is at its closest point to the sun. Another fact that shouldn’t make sense; how does 
+                    this ultra-thin pullover keep you hyper-warm in sub-freezing temps? The Explore is our favorite layering 
+                    life hack; whether running on a chilly morning or added as a mid-layer on a mountain excursion.</p>
                 
                 <div className="color-size-container">
-                    <div className="radio-toolbar">
-                        <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark" defaultChecked/>
-                        <label className="dark" htmlFor="radioDark"></label>
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">COLOR</h3>
+                        </div>
+                        <div className="radio-toolbar">
+                            <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark" defaultChecked/>
+                            <label className="dark" htmlFor="radioDark"></label>
 
-                        <input type="radio" id="radioBlue" name="radioColor" onClick={setColor} value="blue"/>
-                        <label className="blue" htmlFor="radioBlue"></label>
+                            <input type="radio" id="radioBlue" name="radioColor" onClick={setColor} value="blue"/>
+                            <label className="blue" htmlFor="radioBlue"></label>
 
-                        <input type="radio" id="radioGreen" name="radioColor" onClick={setColor} value="green"/>
-                        <label className="green" htmlFor="radioGreen"></label> 
+                            <input type="radio" id="radioGreen" name="radioColor" onClick={setColor} value="green"/>
+                            <label className="green" htmlFor="radioGreen"></label> 
+                        </div>
                     </div>
 
                 
-                    <div className="sizes-container">
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">SIZE</h3>
+                        </div>
                         <div className="size-toolbar">
                             <input id="option-s" className="product__size" type="radio" onClick={setSize} name="product-option" value="s" defaultChecked />
                             <label className="product__size-label" htmlFor="option-s">S</label>

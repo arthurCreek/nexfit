@@ -101,23 +101,34 @@ const MenAppoloVest = () => {
 
     return (
         <div>
-            <div className="home__row">
-                <div className="home__image-area">
-                    <img src={imgSrc} alt="main woman" className="home-image"/>
+            <div className="product__row">
+                <div className="product__image-area">
+                    <img src={imgSrc} alt="main woman" className="product-image"/>
                 </div>
-                <div className="home__text-area">
+                <div className="product__text-area">
                     <h3>The Apollo Vest</h3>
-                    <p>${cost}.00</p>
-                    <p>Protect your core without overheating; our updated take on the performance vest.</p>
+                    <p className="product__cost">$ {cost}.00</p>
+                    <p className="product__description">Protect your core without overheating; our updated take on the performance vest.
+                    The Apollo Hybrid Vest is perfect. Tough as nails, uber-light, and so warm you'll think it just came out of the dryer. 
+                    When frigid winds try to ruin your day, or an uncertain forecast threatens to keep you indoors, clap back with the 
+                    Apollo Hybrid Vest</p>
                 
                 <div className="color-size-container">
-                    <div className="radio-toolbar">
-                        <input type="radio" id="radioBrown" name="radioColor" onClick={setColor} value="brown" defaultChecked/>
-                        <label className="brown" htmlFor="radioBrown"></label>
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">COLOR</h3>
+                        </div>
+                        <div className="radio-toolbar">
+                            <input type="radio" id="radioBrown" name="radioColor" onClick={setColor} value="brown" defaultChecked/>
+                            <label className="brown" htmlFor="radioBrown"></label>
+                        </div>
                     </div>
 
                 
-                    <div className="sizes-container">
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">SIZE</h3>
+                        </div>
                         <div className="size-toolbar">
                             <input id="option-s" className="product__size" type="radio" onClick={setSize} name="product-option" value="s" defaultChecked />
                             <label className="product__size-label" htmlFor="option-s">S</label>
