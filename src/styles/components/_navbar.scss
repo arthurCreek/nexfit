@@ -114,6 +114,7 @@
 .menu__link {
     text-decoration: none;
     color: white;
+    transition: color .25s ease-out;
 
     &--item {
         color: #bcdeed;
@@ -122,28 +123,6 @@
 
 .menu__link:hover,
 .menu__link:active {
-    color: rgb(223, 15, 15);
+    color: $color-red;
 }
 
-.cart__content {
-    height: calc(100vh - 160px);
-    overflow-x: hidden;
-    overflow-y: auto;
-    margin-top: 3rem;
-    padding: 0 3rem;
-
-    &--item {
-        height: 100px;
-    }
-}
-
-.cart__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    & > p {
-        margin: 0 auto;
-        font-size: 2.5em;
-    }
-}

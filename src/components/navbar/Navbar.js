@@ -86,8 +86,10 @@ const Navbar = () => {
                     <div className="cart__content">
                         {
                             items.length === 0 ? (
-                                <div>
-                                    <span>No expenses</span>
+                                <div className="cart__empty">
+                                    <span>Your cart is currently empty.</span>
+                                    <Link href="/women"><a className="cart__empty-link">Shop Women's</a></Link>
+                                    <Link href="/men"><a className="cart__empty-link">Shop Men's</a></Link>
                                 </div>
                             ) : (
                                 items.map((item) => {

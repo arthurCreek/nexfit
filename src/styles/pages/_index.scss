@@ -52,8 +52,8 @@
         color: $color-blue-dark;
         background: $color-blue-light;
         font-size: 2em;
-        // border-radius: 10px;
         margin-top: 4rem;
+        transition: background-color .25s ease-out, color .25s ease-out;
 
         &--item {
             padding: 1rem;
@@ -62,6 +62,11 @@
             margin-top: 2rem;
             color: $color-blue-dark;
             background: $color-blue-light;
+        }
+
+        &--item:hover {
+            background-color: $color-blue-dark;
+            color: $color-blue-light;
         }
     }
 }
