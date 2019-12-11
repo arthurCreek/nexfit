@@ -1,11 +1,19 @@
 .btn-add {
-    background-color: orange;
+    background-color: $color-orange;
     padding: 1.5rem 2rem;
     font-size: 1.6em;
     margin: 2rem 0;
     cursor: pointer;
     text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color .25s ease-out;
 }
+
+.btn-add:hover {
+    background-color: $color-orange-darker;
+}
+
 .btn-add-container {
     margin: 2rem 0;
 }
@@ -15,12 +23,17 @@
 }
 
 .btn-checkout {
-    background-color: orange;
+    background-color: $color-orange;
     padding: 1.5rem 2rem;
     font-size: 2em;
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 
+    transition: background-color .25s ease-out;
+}
+
+.btn-checkout:hover {
+    background-color: $color-orange-darker;
 }
