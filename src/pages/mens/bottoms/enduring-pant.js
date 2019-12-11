@@ -106,27 +106,37 @@ const MenEnduringPant = () => {
 
     return (
         <div>
-            <div className="home__row">
-                <div className="home__image-area">
-                    <img src={imgSrc} alt="main woman" className="home-image"/>
+            <div className="product__row">
+                <div className="product__image-area">
+                    <img src={imgSrc} alt="main woman" className="product-image"/>
                 </div>
-                <div className="home__text-area">
+                <div className="product__text-area">
                     <h3>The Enduring Pant</h3>
-                    <p>${cost}.00</p>
-                    <p>Show your legs some love - our best insulation tech into pants to keep you dry.</p>
+                    <p className="product__cost">$ {cost}.00</p>
+                    <p className="product__description">Back and better than ever, our Enduring pants offer full protection for days spent above the tree-line.
+                    This technical ski pant is packed with useful features to extend your time on the slopes. Our insulation is designed to move and 
+                    to breathe — all while keeping the warmth in and the snow out. The Enduring Pant is fully waterproof and does not lose heat under compression. 
+                    Meaning cozy lift rides and toasty buns all season long.</p>
                 
                 <div className="color-size-container">
-                    <div className="radio-toolbar">
-                        <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark" defaultChecked/>
-                        <label className="dark" htmlFor="radioDark"></label>
-                    </div>
-                    <div className="radio-toolbar">
-                        <input type="radio" id="radioBrown" name="radioColor" onClick={setColor} value="brown"/>
-                        <label className="brown" htmlFor="radioBrown"></label>
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">COLOR</h3>
+                        </div>
+                        <div className="radio-toolbar">
+                            <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark" defaultChecked/>
+                            <label className="dark" htmlFor="radioDark"></label>
+
+                            <input type="radio" id="radioBrown" name="radioColor" onClick={setColor} value="brown"/>
+                            <label className="brown" htmlFor="radioBrown"></label>
+                        </div>
                     </div>
 
                 
-                    <div className="sizes-container">
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">SIZE</h3>
+                        </div>
                         <div className="size-toolbar">
                             <input id="option-s" className="product__size" type="radio" onClick={setSize} name="product-option" value="s" defaultChecked />
                             <label className="product__size-label" htmlFor="option-s">S</label>
