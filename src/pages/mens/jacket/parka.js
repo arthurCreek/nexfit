@@ -115,11 +115,11 @@ const MenParka = () => {
                 </div>
                 <div className="product__text-area">
                     <h3>The Mount Parka</h3>
-                    <p className="product__cost">${cost}.00</p>
+                    <p className="product__cost">$ {cost}.00</p>
                     <p className="product__description">Uncompromised warmth, unparalleled technology. The latest in our pursuit of scientifically warmer insulation.
-                    Meet the greatest thing in warmth since fire. The Orion Parka is our trademark product and the warmest jacket we make. 
-                    Engineered with our patented Solarcore insulation, the Orion is waterproof, wind-blocking, and capable of neutralizing 
-                    the coldest temperatures out there. Whatever the weather, Orion’s got your back.</p>
+                    Meet the greatest thing in warmth since fire. The Mount Parka is our trademark product and the warmest jacket we make. 
+                    Engineered with our patented insulation, the Mount Parka is waterproof, wind-blocking, and capable of neutralizing 
+                    the coldest temperatures out there. Whatever the weather, the Parka's got your back.</p>
                 
                 <div className="color-size-container">
                     <div className="color-size-container--column">
