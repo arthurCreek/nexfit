@@ -24,12 +24,12 @@ const CartItem = ( {name, size, colorSelected, amount, cost, imgSrc} ) => {
         dispatch({
             type: 'REMOVE_ITEM',
             data: {
-                name: item.name,
-                imgSrc: item.imgSrc,
-                colorSelected: item.colorSelected,
-                size: item.size || 'none',
-                cost: item.cost,
-                amount: item.amount
+                name: name,
+                imgSrc: imgSrc,
+                colorSelected: colorSelected,
+                size: size || 'none',
+                cost: cost,
+                amount: amount
             }
         })
     }
@@ -47,8 +47,7 @@ const CartItem = ( {name, size, colorSelected, amount, cost, imgSrc} ) => {
         items.forEach(item => {
             if(item.name === name && item.imgSrc === imgSrc && item.size === size) {
                 if(item.amount === 1) {
-                    removeItemFromCart(item);
-                    // console.log(item);
+                    removeItemFromCart();
                 } else {
                     editCartItem(-1);
                     return;
@@ -56,6 +55,20 @@ const CartItem = ( {name, size, colorSelected, amount, cost, imgSrc} ) => {
 
             }
         });
+    }
+
+    function removeItemRow() {
+        dispatch({
+            type: 'REMOVE_ITEM',
+            data: {
+                name,
+                imgSrc,
+                colorSelected,
+                size: size || 'none',
+                cost,
+                amount: amount
+            }
+        })
     }
 
 
@@ -71,7 +84,7 @@ const CartItem = ( {name, size, colorSelected, amount, cost, imgSrc} ) => {
                 <h3>{name}</h3>
                 <p>Color/Size: {colorSelected.toUpperCase()} / {size.toUpperCase()}</p>
                 <p>Subtotal: ${amount * cost}.00</p>
-                <a>Remove</a>
+                <a onClick={removeItemRow} className="cart-item__remove-item-row">Remove</a>
             </div>
         </div>
     )

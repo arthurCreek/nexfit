@@ -25,6 +25,13 @@ const cartReducer = (state, action) => {
                 }
                 return true;
             });
+        case 'REMOVE_ITEM_ROW':
+            return state.filter(function(item) {
+                if(item.name === action.data.name && item.imgSrc === action.data.imgSrc && item.size === action.data.size){
+                    return false;
+                }
+                return true;
+            });
         default:
             return state;
     }
