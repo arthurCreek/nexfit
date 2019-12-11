@@ -3,6 +3,8 @@ import CartContext from '../../context/cart-context';
 import CartItem from '../cart/cartItem';
 import Link from 'next/link';
 
+const uuidv4 = require('uuid/v4');
+
 const Navbar = () => {
     const { items, dispatch } = useContext(CartContext);
     const [totalItems, setTotalItems] = useState(0);
@@ -91,7 +93,7 @@ const Navbar = () => {
                                 items.map((item) => {
                                     total += item.amount * item.cost;
 
-                                    return <CartItem key={item.name} {...item} />
+                                    return <CartItem key={uuidv4()} {...item} />
                                 })
                             )
                         }
