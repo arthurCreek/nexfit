@@ -3,7 +3,6 @@
 const cartReducer = (state, action) => {
     switch (action.type) {
         case 'POPULATE_CART':
-            console.log(action);
             return action.items;
         case 'ADD_ITEM':
             return [...state,
@@ -19,8 +18,13 @@ const cartReducer = (state, action) => {
                     return item;
                 }
             })  
-        case 'REMOVE':
-            return action.data    
+        case 'REMOVE_ITEM':
+            return state.filter(function(item) {
+                if(item.name === action.data.name && item.imgSrc === action.data.imgSrc && item.size === action.data.size){
+                    return false;
+                }
+                return true;
+            });
         default:
             return state;
     }

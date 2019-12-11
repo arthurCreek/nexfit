@@ -1,16 +1,63 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import CartContext from '../../../context/cart-context';
 import Layout from '../../../components/Layout';
 
 
-
-
 const WomenLeggings = () => {
+    const { items, dispatch } = useContext(CartContext);
 
+    const name = 'The Leggings';
+    const cost = 99;
     const [colorSelected, setColorSelected] = useState('dark');
     const [imgSrc, setImgSrc] = useState('/women/bottoms/women_leggings.jpg');
     const [size, setProductSize] = useState('xs');
 
+    function addItemToCart() {
+        dispatch({
+            type: 'ADD_ITEM',
+            data: {
+                name,
+                imgSrc,
+                colorSelected,
+                size,
+                cost,
+                amount: 1
+            }
+        })
+    }
 
+    function editCartItem(amount) {
+        dispatch({
+            type: 'EDIT_ITEM',
+            data: {
+                name,
+                imgSrc,
+                colorSelected,
+                size,
+                cost,
+                amount: amount
+            }
+        })
+    }
+
+    function inList() {
+        if(items.length > 0){
+            let found = false;
+            items.forEach(item => {
+                if(item.name === name && item.imgSrc === imgSrc && item.size === size) {
+                    editCartItem(1);
+                    found = true
+                    return;
+                }
+            });
+            if (!found) {
+                addItemToCart();
+            }
+        } else {
+            addItemToCart();
+        }
+    }
+    
     function setSize(e) {
         if(e.target.value != size) {
             switch (e.target.value) {
@@ -53,14 +100,14 @@ const WomenLeggings = () => {
     }
 
     return (
-        <Layout>
+        <div>
             <div className="home__row">
                 <div className="home__image-area">
                     <img src={imgSrc} alt="main woman" className="home-image"/>
                 </div>
                 <div className="home__text-area">
                     <h3>The Leggings</h3>
-                    <p>$99.00</p>
+                    <p>${cost}.00</p>
                     <p>For when you need the extra warmth to get active on the chillest of days.</p>
                 
                 <div className="color-size-container">
@@ -95,11 +142,11 @@ const WomenLeggings = () => {
                     </div>
                 </div>
                     <div className="btn-add-container">
-                        <a className="btn-add">ADD TO CART</a>
+                        <a className="btn-add" onClick={inList}>ADD TO CART</a>
                     </div>
                 </div>
             </div>
-        </Layout>
+        </div>
     )
 };
 

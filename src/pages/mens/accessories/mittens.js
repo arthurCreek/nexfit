@@ -7,6 +7,7 @@ const MenMittens = () => {
     const { items, dispatch } = useContext(CartContext);
 
     const name = 'The Mitten';
+    const cost = 79;
     const [colorSelected, setColorSelected] = useState('dark');
     const [imgSrc, setImgSrc] = useState('/men/accessories/men_mittens.jpg');
     const [size, setProductSize] = useState('m');
@@ -19,6 +20,7 @@ const MenMittens = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: 1
             }
         })
@@ -32,6 +34,7 @@ const MenMittens = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: amount
             }
         })
@@ -95,7 +98,7 @@ const MenMittens = () => {
                 </div>
                 <div className="home__text-area">
                     <h3>The Mitten</h3>
-                    <p>$79.00</p>
+                    <p>${cost}.00</p>
                     <p>A complete seal from the elements for days when cold digits are not an option.</p>
                 
                 <div className="color-size-container">

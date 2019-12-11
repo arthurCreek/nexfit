@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState, useContext, useEffect } from 'react';
+import CartContext from '../../context/cart-context';
+import CartItem from '../cart/cartItem';
 import Link from 'next/link';
 
 const Navbar = () => {
+    const { items, dispatch } = useContext(CartContext);
+    const [totalItems, setTotalItems] = useState(0);
+    let total = 0;
+
+    useEffect(() => {
+        if (items.length > 0) {
+            let totalItemTemp = 0;
+            items.forEach(item => {
+                totalItemTemp += item['amount'];
+            });
+            setTotalItems(totalItemTemp);
+        }
+        
+    }, [items]);
 
     function cartToggle() {
         document.querySelector('.cart__drawer').classList.toggle('cart__toggle');
@@ -15,17 +31,23 @@ const Navbar = () => {
             <header className="header">
                 <div className="header__container">
                     <img src="/icons/menu_burger.png" alt="menu icon" className="header__menu-logo" onClick={menuToggle}/>
-                    <div className="heaver__nav-container">
-                        <nav className="header__nav">
-                            <ul className="header__list">
-                                <li><Link href="/"><a>Home</a></Link></li>
-                                <li><Link href="/men"><a>Men</a></Link></li>
-                                <li><Link href="/women"><a>Women</a></Link></li>
-                            </ul>
-                        </nav>
+                    <div >
+                        <Link href="/"><a className="heaver__brand">NexFit</a></Link>
                     </div>
                     <div>
-                        <img src="/icons/shopping_cart.png" alt="shopping cart" className="header__shopping-cart" onClick={cartToggle}/>
+                        <div>
+                            <img src="/icons/shopping_cart.png" alt="shopping cart" className="header__shopping-cart" onClick={cartToggle}/>
+                            {
+                                items.length === 0 ? (
+                                    <div>
+                                        <span></span>
+                                    </div>
+                                ) : (
+                                    <span className="cart_notification">{totalItems}</span>
+                                )
+                            }
+                            
+                        </div>
                     </div>
                 </div>
             </header>
@@ -55,11 +77,28 @@ const Navbar = () => {
                 </div>
 
                 <div className="cart__drawer">
-                    <div>
+                    <div className="cart__header">
                         <a href="#" ><img src="/icons/close.png" alt="close shopping cart" className="cart__drawer-close" onClick={cartToggle}/></a>
+                        <p>SHOPPING CART</p>
                     </div>
                     <div className="cart__content">
-                        
+                        {
+                            items.length === 0 ? (
+                                <div>
+                                    <span>No expenses</span>
+                                </div>
+                            ) : (
+                                items.map((item) => {
+                                    total += item.amount * item.cost;
+
+                                    return <CartItem key={item.name} {...item} />
+                                })
+                            )
+                        }
+                    </div>
+                    <div className="cart-item__footer">
+                        <p>Total: ${total}</p>
+                        <Link href="#"><a className="btn-checkout">Checkout</a></Link>
                     </div>
                 </div>
             </div>

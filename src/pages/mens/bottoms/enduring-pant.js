@@ -8,6 +8,7 @@ const MenEnduringPant = () => {
     const { items, dispatch } = useContext(CartContext);
 
     const name = 'The Enduring Pant';
+    const cost = 179;
     const [colorSelected, setColorSelected] = useState('dark');
     const [imgSrc, setImgSrc] = useState('/men/bottoms/men_enduring_dark.jpg');
     const [size, setProductSize] = useState('s');
@@ -20,6 +21,7 @@ const MenEnduringPant = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: 1
             }
         })
@@ -33,6 +35,7 @@ const MenEnduringPant = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: amount
             }
         })
@@ -109,7 +112,7 @@ const MenEnduringPant = () => {
                 </div>
                 <div className="home__text-area">
                     <h3>The Enduring Pant</h3>
-                    <p>$179.00</p>
+                    <p>${cost}.00</p>
                     <p>Show your legs some love - our best insulation tech into pants to keep you dry.</p>
                 
                 <div className="color-size-container">

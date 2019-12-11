@@ -7,6 +7,7 @@ const MenExploreZip = () => {
     const { items, dispatch } = useContext(CartContext);
 
     const name = 'The Explore Zip';
+    const cost = 119;
     const [colorSelected, setColorSelected] = useState('dark');
     const [imgSrc, setImgSrc] = useState('/men/mid_layer/explore_zip_dark.jpg');
     const [size, setProductSize] = useState('s');
@@ -19,6 +20,7 @@ const MenExploreZip = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: 1
             }
         })
@@ -32,6 +34,7 @@ const MenExploreZip = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: amount
             }
         })
@@ -112,7 +115,7 @@ const MenExploreZip = () => {
                 </div>
                 <div className="home__text-area">
                     <h3>The Explore Zip</h3>
-                    <p>$119.00</p>
+                    <p>${cost}.00</p>
                     <p>We redefined the 1/4 zip, this one does it all and it's better than before.</p>
                 
                 <div className="color-size-container">

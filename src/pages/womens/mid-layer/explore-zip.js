@@ -1,14 +1,62 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import CartContext from '../../../context/cart-context';
 import Layout from '../../../components/Layout';
 
-
 const WomenExploreZip = () => {
+    const { items, dispatch } = useContext(CartContext);
 
+    const name = 'The Explore Zip';
+    const cost = 119;
     const [colorSelected, setColorSelected] = useState('dark');
     const [imgSrc, setImgSrc] = useState('/women/mid_layer/women_explore_zip_dark.jpg');
     const [size, setProductSize] = useState('xs');
 
+    function addItemToCart() {
+        dispatch({
+            type: 'ADD_ITEM',
+            data: {
+                name,
+                imgSrc,
+                colorSelected,
+                size,
+                cost,
+                amount: 1
+            }
+        })
+    }
 
+    function editCartItem(amount) {
+        dispatch({
+            type: 'EDIT_ITEM',
+            data: {
+                name,
+                imgSrc,
+                colorSelected,
+                size,
+                cost,
+                amount: amount
+            }
+        })
+    }
+
+    function inList() {
+        if(items.length > 0){
+            let found = false;
+            items.forEach(item => {
+                if(item.name === name && item.imgSrc === imgSrc && item.size === size) {
+                    editCartItem(1);
+                    found = true
+                    return;
+                }
+            });
+            if (!found) {
+                addItemToCart();
+            }
+        } else {
+            addItemToCart();
+        }
+    }
+    
     function setSize(e) {
         if(e.target.value != size) {
             switch (e.target.value) {
@@ -59,14 +107,14 @@ const WomenExploreZip = () => {
     }
 
     return (
-        <Layout>
+        <div>
             <div className="home__row">
                 <div className="home__image-area">
                     <img src={imgSrc} alt="main woman" className="home-image"/>
                 </div>
                 <div className="home__text-area">
                     <h3>The Explore Zip</h3>
-                    <p>$119.00</p>
+                    <p>${cost}.00</p>
                     <p>Thinner, lighter, and our favorite layering for on the move.</p>
                 
                 <div className="color-size-container">
@@ -106,11 +154,11 @@ const WomenExploreZip = () => {
                     </div>
                 </div>
                     <div className="btn-add-container">
-                        <a className="btn-add">ADD TO CART</a>
+                        <a className="btn-add" onClick={inList}>ADD TO CART</a>
                     </div>
                 </div>
             </div>
-        </Layout>
+        </div>
     )
 };
 

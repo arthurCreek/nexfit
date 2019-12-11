@@ -2,13 +2,15 @@ import React, {useState, useContext} from 'react';
 import CartContext from '../../../context/cart-context';
 import Layout from '../../../components/Layout';
 
-
 const MenBeanie = () => {
     const { items, dispatch } = useContext(CartContext);
 
     const name = 'The Beanie';
+    const cost = 35;
     const [colorSelected, setColorSelected] = useState('gray');
     const [imgSrc, setImgSrc] = useState('/beanie_gray.jpg');
+    const [size, setProductSize] = useState('none');
+    
     function addItemToCart() {
         dispatch({
             type: 'ADD_ITEM',
@@ -17,6 +19,7 @@ const MenBeanie = () => {
                 imgSrc,
                 colorSelected,
                 size: 'none',
+                cost,
                 amount: 1
             }
         })
@@ -30,6 +33,7 @@ const MenBeanie = () => {
                 imgSrc,
                 colorSelected,
                 size: 'none',
+                cost,
                 amount: amount
             }
         })
@@ -79,7 +83,7 @@ const MenBeanie = () => {
                 </div>
                 <div className="home__text-area">
                     <h3>The Beanie</h3>
-                    <p>$35.00</p>
+                    <p>${cost}.00</p>
                     <p>Designed to keep your head toasty and your outing on track.</p>
                 
                 <div className="color-size-container">

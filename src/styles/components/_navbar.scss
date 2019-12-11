@@ -15,10 +15,27 @@
     }
 }
 
+.heaver__brand{
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
     margin: 2rem 4rem;
+}
+
+.cart_notification {
+    color: black;
+    position: fixed;
+    z-index: 4;
+    right: 65px;
+    top: 45px;
+    padding: 4px 7px;
+    background-color: orange;
+    border-radius: 100%;
 }
 
 .cart__drawer {
@@ -99,5 +116,16 @@
 
     &--item {
         height: 100px;
+    }
+}
+
+.cart__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > p {
+        margin: 0 auto;
+        font-size: 2.5em;
     }
 }

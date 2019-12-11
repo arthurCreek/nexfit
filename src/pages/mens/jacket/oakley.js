@@ -7,6 +7,7 @@ const MenOakleyJacket = () => {
     const { items, dispatch } = useContext(CartContext);
 
     const name = 'The Oakley Jacket';
+    const cost = 199;
     const [colorSelected, setColorSelected] = useState('dark');
     const [imgSrc, setImgSrc] = useState('/men/jacket/men_oakley_jacket_dark.jpg');
     const [size, setProductSize] = useState('s');
@@ -19,6 +20,7 @@ const MenOakleyJacket = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: 1
             }
         })
@@ -32,6 +34,7 @@ const MenOakleyJacket = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: amount
             }
         })
@@ -112,7 +115,7 @@ const MenOakleyJacket = () => {
                 </div>
                 <div className="home__text-area">
                     <h3>The Oakley Jacket</h3>
-                    <p>$199.00</p>
+                    <p>${cost}.00</p>
                     <p>Easily meets your needs in any environment with mobility and warmth.</p>
                 
                 <div className="color-size-container">

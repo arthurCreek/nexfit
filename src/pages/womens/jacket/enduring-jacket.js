@@ -6,6 +6,7 @@ const WomenEnduringJacket = () => {
     const { items, dispatch } = useContext(CartContext);
 
     const name = 'The Enduring Jacket';
+    const cost = 189;
     const [colorSelected, setColorSelected] = useState('dark');
     const [imgSrc, setImgSrc] = useState('/women/jacket/women_enduring_jacket_dark.jpg');
     const [size, setProductSize] = useState('xs');
@@ -20,6 +21,7 @@ const WomenEnduringJacket = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: 1
             }
         })
@@ -33,6 +35,7 @@ const WomenEnduringJacket = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: amount
             }
         })
@@ -55,6 +58,7 @@ const WomenEnduringJacket = () => {
             addItemToCart();
         }
     }
+    
     function setSize(e) {
         if(e.target.value != size) {
             switch (e.target.value) {
@@ -108,7 +112,7 @@ const WomenEnduringJacket = () => {
                 </div>
                 <div className="home__text-area">
                     <h3>The Enduring Jacket</h3>
-                    <p>$189.00</p>
+                    <p>${cost}.00</p>
                     <p>Easily meets your needs in any environment with mobility and warmth.</p>
                 
                 <div className="color-size-container">

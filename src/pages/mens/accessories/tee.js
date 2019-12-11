@@ -7,6 +7,7 @@ const MenTee = () => {
     const { items, dispatch } = useContext(CartContext);
 
     const name = 'Mens Tee';
+    const cost = 25;
     const [colorSelected, setColorSelected] = useState('dark');
     const [imgSrc, setImgSrc] = useState('/tee.jpg');
     const [size, setProductSize] = useState('s');
@@ -19,6 +20,7 @@ const MenTee = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: 1
             }
         })
@@ -32,6 +34,7 @@ const MenTee = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: amount
             }
         })
@@ -98,7 +101,7 @@ const MenTee = () => {
                 </div>
                 <div className="home__text-area">
                     <h3>Men's Tee</h3>
-                    <p>$25.00</p>
+                    <p>${cost}.00</p>
                     <p>Fully organic cotton tee, comfy, warm and looking your best.</p>
                 
                 <div className="color-size-container">

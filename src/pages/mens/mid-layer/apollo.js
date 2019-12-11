@@ -7,6 +7,7 @@ const MenAppoloVest = () => {
     const { items, dispatch } = useContext(CartContext);
 
     const name = 'The Apollo Vest';
+    const cost = 119;
     const [colorSelected, setColorSelected] = useState('brown');
     const [imgSrc, setImgSrc] = useState('/men/mid_layer/apollo_vest.jpg');
     const [size, setProductSize] = useState('s');
@@ -19,6 +20,7 @@ const MenAppoloVest = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: 1
             }
         })
@@ -32,6 +34,7 @@ const MenAppoloVest = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: amount
             }
         })
@@ -104,7 +107,7 @@ const MenAppoloVest = () => {
                 </div>
                 <div className="home__text-area">
                     <h3>The Apollo Vest</h3>
-                    <p>$119.00</p>
+                    <p>${cost}.00</p>
                     <p>Protect your core without overheating; our updated take on the performance vest.</p>
                 
                 <div className="color-size-container">

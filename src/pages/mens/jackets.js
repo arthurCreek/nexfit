@@ -34,7 +34,7 @@ const MensJackets = () => (
                     <div className="home__text-area home__text-area--men">
                         <h3>The Oakley Jacket</h3>
                         <p>Easily meets your needs in any environment with mobility and warmth.</p>
-                        <Link href="/mens/jacket/parka"><a className="home__link home__link--item">SHOP OAKLEY</a></Link>
+                        <Link href="/mens/jacket/oakley"><a className="home__link home__link--item">SHOP OAKLEY</a></Link>
                     </div>
                 </div>
 

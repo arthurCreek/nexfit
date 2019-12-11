@@ -7,6 +7,7 @@ const MenParka = () => {
     const { items, dispatch } = useContext(CartContext);
 
     const name = 'The Mount Parka';
+    const cost = 149;
     const [colorSelected, setColorSelected] = useState('dark');
     const [imgSrc, setImgSrc] = useState('/men/jacket/men_mount_parka_dark.jpg');
     const [size, setProductSize] = useState('s');
@@ -19,6 +20,7 @@ const MenParka = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: 1
             }
         })
@@ -32,6 +34,7 @@ const MenParka = () => {
                 imgSrc,
                 colorSelected,
                 size,
+                cost,
                 amount: amount
             }
         })
@@ -112,7 +115,7 @@ const MenParka = () => {
                 </div>
                 <div className="home__text-area">
                     <h3>The Mount Parka</h3>
-                    <p>$149.00</p>
+                    <p>${cost}.00</p>
                     <p>Uncomprimised warmth, the latest in our pursiot of warmer insulation.</p>
                 
                 <div className="color-size-container">
