@@ -75,7 +75,7 @@ const Navbar = () => {
                             <li><Link href="/womens/accessories"><a className="menu__link">ACCESSORIES</a></Link></li>
                         </ul>
                     </div>
-                    <h2>ABOUT US</h2>
+                    <h2><Link href="/aboutus"><a className="menu__link">ABOUT US</a></Link></h2>
                 </div>
 
                 <div className="cart__drawer">
@@ -100,7 +100,7 @@ const Navbar = () => {
                     </div>
                     <div className="cart-item__footer">
                         <p>Total: ${total}</p>
-                        <Link href="#"><a className="btn-checkout">Checkout</a></Link>
+                        <Link href="/checkout"><a className="btn-checkout">Checkout</a></Link>
                     </div>
                 </div>
             </div>
