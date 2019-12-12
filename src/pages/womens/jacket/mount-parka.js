@@ -108,30 +108,40 @@ const WomenMountParka = () => {
 
     return (
         <div>
-            <div className="home__row">
-                <div className="home__image-area">
-                    <img src={imgSrc} alt="main woman" className="home-image"/>
+            <div className="product__row">
+                <div className="product__image-area">
+                    <img src={imgSrc} alt="main woman" className="product-image"/>
                 </div>
-                <div className="home__text-area">
+                <div className="product__text-area">
                     <h3>The Mount Parka</h3>
-                    <p>${cost}.00</p>
-                    <p>Uncomprimised warmth, the latest in our pursiot of warmer insulation.</p>
+                    <p className="product__cost">$ {cost}.00</p>
+                    <p className="product__description">Uncompromised warmth, unparalleled technology. The latest in our pursuit of scientifically warmer insulation.
+                    Meet the greatest thing in warmth since fire. The Mount Parka is our trademark product and the warmest jacket we make. 
+                    Engineered with our patented insulation, the Mount Parka is waterproof, wind-blocking, and capable of neutralizing 
+                    the coldest temperatures out there. Whatever the weather, the Parka's got your back.</p>
                 
                 <div className="color-size-container">
-                    <div className="radio-toolbar">
-                        <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark" defaultChecked/>
-                        <label className="dark" htmlFor="radioDark"></label>
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">COLOR</h3>
+                        </div>
+                        <div className="radio-toolbar">
+                            <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark" defaultChecked/>
+                            <label className="dark" htmlFor="radioDark"></label>
 
-                        <input type="radio" id="radioGray" name="radioColor" onClick={setColor} value="gray"/>
-                        <label className="gray" htmlFor="radioGray"></label>
+                            <input type="radio" id="radioGray" name="radioColor" onClick={setColor} value="gray"/>
+                            <label className="gray" htmlFor="radioGray"></label>
 
-                        <input type="radio" id="radioBurgundy" name="radioColor" onClick={setColor} value="burgundy"/>
-                        <label className="burgundy" htmlFor="radioBurgundy"></label>
-
+                            <input type="radio" id="radioBurgundy" name="radioColor" onClick={setColor} value="burgundy"/>
+                            <label className="burgundy" htmlFor="radioBurgundy"></label>
+                        </div>
                     </div>
 
                 
-                    <div className="sizes-container">
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">SIZE</h3>
+                        </div>
                         <div className="size-toolbar">
                             <input id="option-xs" className="product__size" type="radio" onClick={setSize} name="product-option" value="xs" defaultChecked />
                             <label className="product__size-label" htmlFor="option-xs">XS</label>

@@ -106,27 +106,37 @@ const WomenEnduringJacket = () => {
 
     return (
         <div>
-            <div className="home__row">
-                <div className="home__image-area">
-                    <img src={imgSrc} alt="main woman" className="home-image"/>
+            <div className="product__row">
+                <div className="product__image-area">
+                    <img src={imgSrc} alt="main woman" className="product-image"/>
                 </div>
-                <div className="home__text-area">
+                <div className="product__text-area">
                     <h3>The Enduring Jacket</h3>
-                    <p>${cost}.00</p>
-                    <p>Easily meets your needs in any environment with mobility and warmth.</p>
+                    <p className="product__cost">$ {cost}.00</p>
+                    <p className="product__description">Easily meet the demands of any environment with unmatched mobility and warmth. This technical jacket 
+                    excels on the slopes and beyond. From slope to city the Enduring Ski Jacket has you covered. Using our patented Solarcore insulation 
+                    the Enduring is engineered to move and to breathe, even during the most strenuous cold-weather activity. Designed and tested to handle 
+                    the elements with ease, the Endeavor is fully waterproof and ready to take on the cold, without taking you out of your comfort zone.</p>
                 
                 <div className="color-size-container">
-                    <div className="radio-toolbar">
-                        <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark" defaultChecked/>
-                        <label className="dark" htmlFor="radioDark"></label>
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">COLOR</h3>
+                        </div>
+                        <div className="radio-toolbar">
+                            <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark" defaultChecked/>
+                            <label className="dark" htmlFor="radioDark"></label>
 
-                        <input type="radio" id="radioBlue" name="radioColor" onClick={setColor} value="blue"/>
-                        <label className="blue" htmlFor="radioBlue"></label>
-
+                            <input type="radio" id="radioBlue" name="radioColor" onClick={setColor} value="blue"/>
+                            <label className="blue" htmlFor="radioBlue"></label>
+                        </div>
                     </div>
 
                 
-                    <div className="sizes-container">
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">SIZE</h3>
+                        </div>
                         <div className="size-toolbar">
                             <input id="option-xs" className="product__size" type="radio" onClick={setSize} name="product-option" value="xs" defaultChecked />
                             <label className="product__size-label" htmlFor="option-xs">XS</label>
