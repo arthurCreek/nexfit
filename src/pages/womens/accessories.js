@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 import Link from 'next/link';
 
 const WomensAccessories = () => (
-    <Layout>
+    <div>
         <div className="hero hero--category">
             <div className="hero__text-box" id="hero__main-text">
                 <h1 className="hero-primary">
@@ -51,7 +51,7 @@ const WomensAccessories = () => (
 
             </div>
         </section>
-    </Layout>
+    </div>
 );
 
 export default WomensAccessories;

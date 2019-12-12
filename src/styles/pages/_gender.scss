@@ -26,6 +26,7 @@
     &__text-area {
         display: flex;
         flex-direction: column;
+        padding-top: 2rem;
 
         &--gender {
             padding-left: 7rem;
@@ -46,6 +47,8 @@
             width: 17rem;
             text-align: center;
             font-weight: bold;
+            padding: 1.5rem 0;
+            font-size: 1.5em;
         }
     }
 

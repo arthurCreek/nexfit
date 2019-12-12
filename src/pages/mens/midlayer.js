@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 import Link from 'next/link';
 
 const MensMidLayer = () => (
-    <Layout>
+    <div>
         <div className="hero hero--category">
             <div className="hero__text-box" id="hero__main-text">
                 <h1 className="hero-primary">
@@ -40,7 +40,7 @@ const MensMidLayer = () => (
 
             </div>
         </section>
-    </Layout>
+    </div>
 );
 
 export default MensMidLayer;
