@@ -77,23 +77,30 @@ const WomanBeanie = () => {
 
     return (
         <div>
-            <div className="home__row">
-                <div className="home__image-area">
-                    <img src={imgSrc} alt="main woman" className="home-image"/>
+            <div className="product__row">
+                <div className="product__image-area">
+                    <img src={imgSrc} alt="main woman" className="product-image"/>
                 </div>
-                <div className="home__text-area">
+                <div className="product__text-area">
                     <h3>The Beanie</h3>
-                    <p>${cost}.00</p>
-                    <p>Designed to keep your head toasty and your outing on track.</p>
+                    <p className="product__cost">$ {cost}.00</p>
+                    <p className="product__description">Designed and tested to keep your dome toasty and your outing on track.
+                    Cold and stinging ears will end any outdoor adventure with the quickness. Our beanie utilizes a band of 
+                    patented insulation to boost warmth and protect your ears. Like a Saturn-esque ring of warmth, 
+                    the Beanie will keep you out and about all winter long.</p>
                 
                 <div className="color-size-container">
-                    <div className="radio-toolbar">
-                        <input type="radio" id="radioGray" name="radioColor" onClick={setColor} value="gray" defaultChecked/>
-                        <label className="gray" htmlFor="radioGray"></label>
-                    </div>
-                    <div className="radio-toolbar">
-                        <input type="radio" id="radioBlue" name="radioColor" onClick={setColor} value="blue"/>
-                        <label className="blue" htmlFor="radioBlue"></label>
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">COLOR</h3>
+                        </div>
+                        <div className="radio-toolbar">
+                            <input type="radio" id="radioGray" name="radioColor" onClick={setColor} value="gray" defaultChecked/>
+                            <label className="gray" htmlFor="radioGray"></label>
+                            
+                            <input type="radio" id="radioBlue" name="radioColor" onClick={setColor} value="blue"/>
+                            <label className="blue" htmlFor="radioBlue"></label>
+                        </div>
                     </div>
 
             
