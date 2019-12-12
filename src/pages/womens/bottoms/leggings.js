@@ -101,24 +101,35 @@ const WomenLeggings = () => {
 
     return (
         <div>
-            <div className="home__row">
-                <div className="home__image-area">
-                    <img src={imgSrc} alt="main woman" className="home-image"/>
+            <div className="product__row">
+                <div className="product__image-area">
+                    <img src={imgSrc} alt="main woman" className="product-image"/>
                 </div>
-                <div className="home__text-area">
+                <div className="product__text-area">
                     <h3>The Leggings</h3>
-                    <p>${cost}.00</p>
-                    <p>For when you need the extra warmth to get active on the chillest of days.</p>
+                    <p className="product__cost">$ {cost}.00</p>
+                    <p className="product__description">When you need extra warmth to get active on the coldest days, look no further.
+                    Comfortable, cozy leggings, it’s that simple. The Legging has all of the next to skin comfort and freedom 
+                    of movement that you’d expect in any performance tight, but with our thin insulation placed along the 
+                    outer leg from hip to ankle. Curve-hugging support and ultimate flexibility keep you looking good whether you’re 
+                    working out or just heading to work.</p>
                 
                 <div className="color-size-container">
-                    <div className="radio-toolbar">
-                        <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark"/>
-                        <label className="dark" htmlFor="radioDark"></label>
-
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">COLOR</h3>
+                        </div>
+                        <div className="radio-toolbar">
+                            <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark"/>
+                            <label className="dark" htmlFor="radioDark"></label>
+                        </div>
                     </div>
 
                 
-                    <div className="sizes-container">
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">SIZE</h3>
+                        </div>
                         <div className="size-toolbar">
                             <input id="option-xs" className="product__size" type="radio" onClick={setSize} name="product-option" value="xs" defaultChecked />
                             <label className="product__size-label" htmlFor="option-xs">XS</label>
