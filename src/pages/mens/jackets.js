@@ -23,13 +23,13 @@ const MensJackets = () => (
                         <Link href="/mens/jacket/parka"><a className="home__link home__link--item">SHOP MOUNT</a></Link>
                     </div>
                     <div className="home__image-area">
-                        <img src="/men/jacket/men_mount_parka_dark.jpg" alt="main woman" className="home-image"/>
+                        <img src="/men/jacket/parka_main.jpg" alt="main woman" className="home-image"/>
                     </div>
                 </div>
 
                 <div className="home__row">
                     <div className="home__image-area">
-                        <img src="/men/jacket/men_oakley_jacket_dark.jpg" alt="main woman" className="home-image"/>
+                        <img src="/men/jacket/enduring_main.jpg" alt="main woman" className="home-image"/>
                     </div>
                     <div className="home__text-area home__text-area--men">
                         <h3>The Oakley Jacket</h3>

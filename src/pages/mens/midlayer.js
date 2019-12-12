@@ -23,13 +23,13 @@ const MensMidLayer = () => (
                         <Link href="/mens/mid-layer/apollo"><a className="home__link home__link--item">SHOP APOLLO</a></Link>
                     </div>
                     <div className="home__image-area">
-                        <img src="/men/mid_layer/apollo_vest.jpg" alt="main woman" className="home-image"/>
+                        <img src="/men/mid_layer/apollo_main.jpg" alt="main woman" className="home-image"/>
                     </div>
                 </div>
 
                 <div className="home__row">
                     <div className="home__image-area">
-                        <img src="/men/mid_layer/explore_zip_dark.jpg" alt="main woman" className="home-image"/>
+                        <img src="/men/mid_layer/explore_main.jpg" alt="main woman" className="home-image"/>
                     </div>
                     <div className="home__text-area home__text-area--men">
                         <h3>The Explore Zip</h3>
