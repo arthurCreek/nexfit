@@ -92,23 +92,33 @@ const MenMittens = () => {
 
     return (
         <div>
-            <div className="home__row">
-                <div className="home__image-area">
-                    <img src={imgSrc} alt="main woman" className="home-image"/>
+            <div className="product__row">
+                <div className="product__image-area">
+                    <img src={imgSrc} alt="main woman" className="product-image"/>
                 </div>
-                <div className="home__text-area">
+                <div className="product__text-area">
                     <h3>The Mitten</h3>
-                    <p>${cost}.00</p>
-                    <p>A complete seal from the elements for days when cold digits are not an option.</p>
+                    <p className="product__cost">$ {cost}.00</p>
+                    <p className="product__description">Our mittens are a complete weather seal for days when cold digits are not an option.
+                    The Mittens are ridiculously warm. Like little solar cocoons for your hands, they absolutely shut down the cold. 
+                    When we experiment with liquid nitrogen (it’s kind of a thing), we always reach for a pair.</p>
                 
                 <div className="color-size-container">
-                    <div className="radio-toolbar">
-                        <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark" defaultChecked/>
-                        <label className="dark" htmlFor="radioDark"></label>
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">COLOR</h3>
+                        </div>
+                        <div className="radio-toolbar">
+                            <input type="radio" id="radioDark" name="radioColor" onClick={setColor} value="dark" defaultChecked/>
+                            <label className="dark" htmlFor="radioDark"></label>
+                        </div>
                     </div>
 
                 
-                    <div className="sizes-container">
+                    <div className="color-size-container--column">
+                        <div>
+                            <h3 className="options-title">SIZE</h3>
+                        </div>
                         <div className="size-toolbar">
                             <input id="option-m" className="product__size" type="radio" onClick={setSize} name="product-option" value="m" defaultChecked/>
                             <label htmlFor="option-m">M</label>
