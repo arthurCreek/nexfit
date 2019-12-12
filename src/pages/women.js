@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import Link from 'next/link';
 
 const Women = () => (
-    <Layout>
+    <div>
         <div className="hero hero--sub hero--sub-women">
             <div className="hero__text-box" id="hero__main-text">
                 <h1 className="hero-primary">
@@ -116,7 +116,7 @@ const Women = () => (
                 </div>
             </div>
         </section>
-    </Layout>
+    </div>
 );
 
 export default Women;

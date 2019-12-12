@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import Link from 'next/link';
 
 const Men = () => (
-    <Layout>
+    <div>
         <div className="hero hero--sub">
             <div className="hero__text-box" id="hero__main-text">
                 <h1 className="hero-primary">
@@ -105,7 +105,7 @@ const Men = () => (
                 </div>
             </div>
         </section>
-    </Layout>
+    </div>
 );
 
 export default Men;

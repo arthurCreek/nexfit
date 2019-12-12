@@ -13,7 +13,7 @@ const Checkout = () => {
     let total = 0;
 
     return (
-        <Layout>
+        <div>
             <div className="checkout__container">
                 <div className="checkout__payment-container">
                     <h1>NexFit</h1>
@@ -117,7 +117,7 @@ const Checkout = () => {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </div>
     );
 }
 

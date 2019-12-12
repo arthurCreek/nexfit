@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 
 const AboutUs = () => (
-    <Layout>
+    <div>
         <div className="hero hero--sub">
             <div className="hero__text-box" id="hero__main-text">
                 <h1 className="hero-primary">
@@ -35,7 +35,7 @@ const AboutUs = () => (
 
             </div>
         </section>
-    </Layout>
+    </div>
 );
 
 export default AboutUs;
