@@ -11,6 +11,15 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem 15rem;
     margin-top: 10rem;
+
+    @include respond(tab-land) {
+        grid-gap: 5rem 5rem;
+    }
+
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .gender {
@@ -35,12 +44,29 @@
         & > h3 {
             font-size: 3.2em;
             text-align: center;
+
+            @include respond(tab-port) {
+                font-size: 3.8em;
+            }
+
+            @include respond(phone) {
+                font-size: 3.2em;
+                margin-bottom: 1rem;
+            }
         }
 
         & > p {
             font-size: 1.7em;
             width: 45rem;
             text-align: center;
+
+            @include respond(tab-port) {
+                font-size: 2em;
+            }
+
+            @include respond(phone) {
+                width: 90vw;
+            }
         }
 
         & > a {
@@ -49,6 +75,12 @@
             font-weight: bold;
             padding: 1.5rem 0;
             font-size: 1.5em;
+
+            @include respond(tab-port) {
+                padding: 2rem 0;
+                width: 20rem;
+                margin-bottom: 6rem;
+            }
         }
     }
 
@@ -78,4 +110,12 @@
 
 .gender-image {
     width: 45rem;
+
+    @include respond(tab-port) {
+        width: 70vw;
+    }
+
+    @include respond(phone) {
+        width: 80vw;
+    }
 }

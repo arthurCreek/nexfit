@@ -57,7 +57,8 @@
         }
 
         @include respond(phone){
-            top: 40%
+            top: 40%;
+            width: 100%;
         }
     }
 
