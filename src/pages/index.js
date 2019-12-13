@@ -23,7 +23,7 @@ const index = () => (
                 <div className="home__row">
                     <div className="home__text-area">
                         <h3>Revolutionary Outdoor Gear</h3>
-                        <p>Born from necessity, driven by design, the best insulation in any gear.</p>
+                        <p>Born from necessity, driven by design, NEXFIT was founded on the pursuit of building the best insulation in any gear.</p>
                         <Link href="/women"><a className="home__link home__link--item">Show Women's</a></Link>
                     </div>
                     <div className="home__image-area">
@@ -37,7 +37,8 @@ const index = () => (
                     </div>
                     <div className="home__text-area home__text-area--men">
                         <h3>Engineered to Move</h3>
-                        <p>Improvents in insulation equals less layers.  Better warmth, better mobility.</p>
+                        <p>We started with the problem; why do we need all those layers to keep warm in the elements? Improvents in insulation equals 
+                        less layers.  Better warmth, better mobility.</p>
                         <Link href="/men"><a className="home__link home__link--item">Show Men's</a></Link>
                     </div>
                 </div>
@@ -45,7 +46,8 @@ const index = () => (
                 <div className="home__row">
                     <div className="home__text-area">
                         <h3>It's in our DNA.</h3>
-                        <p>We created what we wanted to wear, now we share it with you.</p>
+                        <p>We created what we wanted to wear, now we share it with you.  The first insulation to withstand the -455 degree vacuum of 
+                        space.  We continue to push the boundaries of thermal research.</p>
                         <Link href="/aboutus"><a className="home__link home__link--item">About Us</a></Link>
                     </div>
                     <div className="home__image-area">

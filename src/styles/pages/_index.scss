@@ -16,6 +16,16 @@
         display: flex;
         justify-content: space-around;
         margin-bottom: 10rem;
+
+        @include respond(tab-land) {
+            margin-left: 6rem;
+            margin-right: 6rem;
+        }
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__text-area {
@@ -25,19 +35,59 @@
         justify-content: center;
         text-align: left;
 
+        @include respond(tab-port) {
+            order: 2;
+            align-items: center;
+        }
+
+        @include respond(tab-port) {
+            width: 80%;
+        }
+
+        @include respond(phone) {
+            width: 85vw;
+        }
+
         &--men {
             padding-left: 7rem;
+
+            @include respond(tab-port) {
+                padding-left: 0;
+            }
         }
 
         & > h3 {
             font-size: 3.2em;
             text-align: left;
+
+            @include respond(tab-port) {
+                margin-bottom: 2rem;
+                width: 80%;
+                text-align: center;
+            }
+
+            @include respond(phone) {
+                font-size: 3em;
+                width: 100%;
+            }
         }
 
         & > p {
             font-size: 1.7em;
             width: 40rem;
             text-align: left;
+
+            @include respond(tab-port) {
+                font-size: 2.2em;
+                width: 50rem;
+                text-align: center;
+                line-height: 20px;
+            }
+
+            @include respond(phone) {
+                font-size: 2em;
+                width: 85vw;
+            }
         }
 
         & > a {
@@ -46,6 +96,12 @@
             font-weight: bold;
             padding: 1.5rem 0;
             font-size: 1.5em;
+
+            @include respond(tab-port) {
+                width: 25rem;
+                padding: 2.2rem 0;
+                font-size: 1.8em;
+            }
         }
     }
 
@@ -81,4 +137,9 @@
 .home__image-area {
     width: 50rem;
     overflow: hidden;
+
+    @include respond(tab-port) {
+        order: 1;
+        margin-bottom: 4rem;
+    }
 }
