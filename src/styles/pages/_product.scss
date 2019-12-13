@@ -94,10 +94,19 @@
   display: flex;
   align-items: center;
 
+  @include respond(phone) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   &--column {
     display: flex;
     flex-direction: column;
     margin-right: 2rem;
+
+    @include respond(tab-land) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -110,6 +119,14 @@
   &__row {
   display: flex;
   margin-top: 79px;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    @include respond(phone) {
+      margin-top: 59px;
+    }
   }
 
 
@@ -117,6 +134,21 @@
     width: 45%;
     height: 100vh;
     overflow: hidden;
+
+    @include respond(tab-land) {
+      width: 50%;
+      height: 100%;
+    }
+
+    @include respond(tab-port) {
+      width: 90vw;
+      margin: 2rem auto;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      margin: 0;
+    }
   }
 
   &__cost {
@@ -139,6 +171,19 @@
     flex-direction: column;
     width: 55%;
     padding: 6rem 10rem;
+
+    @include respond(tab-land) {
+      width: 50%;
+      padding: 4rem 5rem;
+    }
+
+    @include respond(tab-port) {
+      width: 90vw;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+    }
 
     & > h3 {
         font-size: 3.2em;
