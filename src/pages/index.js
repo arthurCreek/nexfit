@@ -27,13 +27,13 @@ const index = () => (
                         <Link href="/women"><a className="home__link home__link--item">Show Women's</a></Link>
                     </div>
                     <div className="home__image-area">
-                        <img src="/woman_main.jpg" alt="main woman" className="home-image"/>
+                        <img src="/woman_main_min.jpg" alt="main woman" className="home-image"/>
                     </div>
                 </div>
 
                 <div className="home__row">
                     <div className="home__image-area">
-                        <img src="/man_main.jpg" alt="main woman" className="home-image"/>
+                        <img src="/man_main_min.jpg" alt="main woman" className="home-image"/>
                     </div>
                     <div className="home__text-area home__text-area--men">
                         <h3>Engineered to Move</h3>
@@ -49,7 +49,7 @@ const index = () => (
                         <Link href="/aboutus"><a className="home__link home__link--item">About Us</a></Link>
                     </div>
                     <div className="home__image-area">
-                        <img src="/woman_about.jpg" alt="home about woman" className="home-image"/>
+                        <img src="/woman_about_min.jpg" alt="home about woman" className="home-image"/>
                     </div>
                 </div>
             </div>
