@@ -8,7 +8,7 @@ const WomenEnduringJacket = () => {
     const name = 'The Enduring Jacket';
     const cost = 189;
     const [colorSelected, setColorSelected] = useState('dark');
-    const [imgSrc, setImgSrc] = useState('/women/jacket/women_enduring_jacket_dark.jpg');
+    const [imgSrc, setImgSrc] = useState('/women/jacket/women_enduring_jacket_dark_min.jpg');
     const [size, setProductSize] = useState('xs');
 
 
@@ -91,11 +91,11 @@ const WomenEnduringJacket = () => {
             switch (e.target.value) {
                 case 'dark':
                     setColorSelected('dark');
-                    setImgSrc('/women/jacket/women_enduring_jacket_dark.jpg');
+                    setImgSrc('/women/jacket/women_enduring_jacket_dark_min.jpg');
                     break;
                 case 'blue':
                     setColorSelected('blue');
-                    setImgSrc('/women/jacket/women_enduring_jacket_blue.jpg');
+                    setImgSrc('/women/jacket/women_enduring_jacket_blue_min.jpg');
                     break;
                 default:
                     break;

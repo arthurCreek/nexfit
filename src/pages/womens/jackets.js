@@ -23,13 +23,13 @@ const WomensJackets = () => (
                         <Link href="/womens/jacket/mount-parka"><a className="home__link home__link--item">SHOP MOUNT</a></Link>
                     </div>
                     <div className="home__image-area">
-                        <img src="/women/jacket/parka_main.jpg" alt="main woman" className="home-image"/>
+                        <img src="/women/jacket/parka_main_min.jpg" alt="main woman" className="home-image"/>
                     </div>
                 </div>
 
                 <div className="home__row">
                     <div className="home__image-area">
-                        <img src="/women/jacket/oakley_main.jpg" alt="main woman" className="home-image"/>
+                        <img src="/women/jacket/oakley_main_min.jpg" alt="main woman" className="home-image"/>
                     </div>
                     <div className="home__text-area home__text-area--men">
                         <h3>The Oakley Jacket</h3>
@@ -45,7 +45,7 @@ const WomensJackets = () => (
                         <Link href="/womens/jacket/enduring-jacket"><a className="home__link home__link--item">SHOP ENDURING</a></Link>
                     </div>
                     <div className="home__image-area">
-                        <img src="/women/jacket/enduring_main.jpg" alt="main woman" className="home-image"/>
+                        <img src="/women/jacket/enduring_main_min.jpg" alt="main woman" className="home-image"/>
                     </div>
                 </div>
             </div>
