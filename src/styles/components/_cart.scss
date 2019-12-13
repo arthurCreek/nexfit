@@ -25,6 +25,14 @@
 
 .cart-item__text {
     margin-left: 2rem;
+
+    & > h3 {
+        margin-bottom: .5rem;
+    }
+
+    & > p {
+        margin-bottom: .5rem;
+    }
 }
 
 .cart-item__amount {

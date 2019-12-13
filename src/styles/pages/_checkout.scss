@@ -9,22 +9,48 @@
     width: 55%;
 }
 
+.checkout__payment-container-center {
+    max-width: 800px;
+    margin: 5rem 0 5rem auto;
+
+    & > h1 {
+        font-size: 6em;
+        margin-bottom: 1rem;
+    }
+
+    & > p {
+        font-size: 1.6em;
+        margin-bottom: 1rem;
+    }
+
+    & > h2 {
+        font-size: 2em;
+        margin-bottom: 1rem;
+    }
+}
+
 .form__side-by-side {
     display: flex;
+
+    &--inputs:first-child{
+        margin-right: 2rem;
+    }
 }
+
 
 .checkout__main-item-container {
     width: 45%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: $color-off-white;
 }
 
 .checkout__item-footer {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     margin: 5rem;
 
     & > p {
-        font-size: 2.3em;
+        font-size: 3em;
     }
 }
 
@@ -38,4 +64,77 @@
     &--item {
         height: 100px;
     }
+}
+
+.payment__input {
+    
+
+    &--large {
+        border-radius: 5px;
+        border: 1px solid $color-gray;
+        width: 60rem;
+        height: 4rem;
+        font-size: 1.8em;
+        margin-bottom: 1.6rem;
+        padding-left: 1rem;
+        outline: none;
+    }
+
+    &--small {
+        border-radius: 5px;
+        border: 1px solid $color-gray;
+        width: 29rem;
+        height: 4rem;
+        font-size: 1.8em;
+        margin-bottom: 1.6rem;  
+        padding-left: 1rem;
+        outline: none;
+    }
+
+    &--large:focus,
+    &--small:focus {
+        border-color: $color-blue-dark;
+    }
+}
+
+.contact__email-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__marketing-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+    
+    & > input {
+        cursor: pointer;
+    }
+
+    & > label {
+        margin-left: 1rem;
+    }
+}
+
+.checkout__h2 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.checkout_text-bold {
+    font-weight: bold;
+}
+
+.checkout__footer-checkout {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 60rem;
+}
+
+.checkout-return {
+    text-decoration: none;
+    color: $color-blue-dark;
+    font-size: 1.4em;
 }
