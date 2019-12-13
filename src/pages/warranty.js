@@ -3,8 +3,9 @@ import React from 'react';
 const Warranty = () => {
 
     return (
-        <div>
-            <div>
+        <div className="warranty__container">
+            <h2>WARRANTY</h2>
+            <div className="warranty__text">
                 <h3>LIMITED WARRANTY POLICY  </h3>
 
                 <p>Our outerwear is warranted against manufacturing defects for 12 months from date of purchase. 
