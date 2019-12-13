@@ -8,7 +8,7 @@ const MenBeanie = () => {
     const name = 'The Beanie';
     const cost = 35;
     const [colorSelected, setColorSelected] = useState('gray');
-    const [imgSrc, setImgSrc] = useState('/beanie_gray.jpg');
+    const [imgSrc, setImgSrc] = useState('/beanie_gray_min.jpg');
     const [size, setProductSize] = useState('none');
     
     function addItemToCart() {
@@ -62,11 +62,11 @@ const MenBeanie = () => {
             switch (e.target.value) {
                 case 'gray':
                     setColorSelected('gray');
-                    setImgSrc('/beanie_gray.jpg');
+                    setImgSrc('/beanie_gray_min.jpg');
                     break;
                 case 'blue':
                     setColorSelected('blue');
-                    setImgSrc('/beanie_blue.jpg');
+                    setImgSrc('/beanie_blue_min.jpg');
                     break;
                 default:
                     break;

@@ -9,7 +9,7 @@ const MenTee = () => {
     const name = 'Mens Tee';
     const cost = 25;
     const [colorSelected, setColorSelected] = useState('dark');
-    const [imgSrc, setImgSrc] = useState('/tee.jpg');
+    const [imgSrc, setImgSrc] = useState('/tee_min.jpg');
     const [size, setProductSize] = useState('s');
 
     function addItemToCart() {
@@ -84,7 +84,7 @@ const MenTee = () => {
             switch (e.target.value) {
                 case 'dark':
                     setColorSelected('dark');
-                    setImgSrc('/tee.jpg');
+                    setImgSrc('/tee_min.jpg');
                     break;
                 default:
                     break;
