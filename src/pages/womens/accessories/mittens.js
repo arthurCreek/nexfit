@@ -10,7 +10,7 @@ const WomenMittens = () => {
     const name = 'The Mitten';
     const cost = 79;
     const [colorSelected, setColorSelected] = useState('dark');
-    const [imgSrc, setImgSrc] = useState('/women/accessories/women_mittens.jpg');
+    const [imgSrc, setImgSrc] = useState('/women/accessories/women_mittens_min.jpg');
     const [size, setProductSize] = useState('m');
 
     function addItemToCart() {
@@ -82,7 +82,7 @@ const WomenMittens = () => {
             switch (e.target.value) {
                 case 'dark':
                     setColorSelected('dark');
-                    setImgSrc('/women/accessories/women_mittens.jpg');
+                    setImgSrc('/women/accessories/women_mittens_min.jpg');
                     break;
                 default:
                     break;

@@ -23,13 +23,13 @@ const WomensAccessories = () => (
                         <Link href="/womens/accessories/tee"><a className="home__link home__link--item">SHOP TEE</a></Link>
                     </div>
                     <div className="home__image-area">
-                        <img src="/tee_main.jpg" alt="main woman" className="home-image"/>
+                        <img src="/tee_main_min.jpg" alt="main woman" className="home-image"/>
                     </div>
                 </div>
 
                 <div className="home__row">
                     <div className="home__image-area">
-                        <img src="/beanie_main.jpg" alt="main woman" className="home-image"/>
+                        <img src="/beanie_main_min.jpg" alt="main woman" className="home-image"/>
                     </div>
                     <div className="home__text-area home__text-area--men">
                         <h3>The Beanie</h3>
@@ -45,7 +45,7 @@ const WomensAccessories = () => (
                         <Link href="/womens/accessories/mitten"><a className="home__link home__link--item">SHOP MITTENS</a></Link>
                     </div>
                     <div className="home__image-area">
-                        <img src="/women/accessories/mitten_main.jpg" alt="main woman" className="home-image"/>
+                        <img src="/women/accessories/mitten_main_min.jpg" alt="main woman" className="home-image"/>
                     </div>
                 </div>
 
