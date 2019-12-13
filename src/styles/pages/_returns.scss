@@ -2,6 +2,10 @@
     margin: 13rem auto 10rem auto;
     max-width: 800px;
 
+    @include respond(ipad) {
+        min-height: 70vh;
+      }
+
     @include respond(tab-port) {
         max-width: 70vw;
     }

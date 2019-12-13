@@ -20,11 +20,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == phone {
         @media only screen and (max-width: 37.5em) { @content };    //600px
     }
+    @if $breakpoint == phone-land {
+        @media only screen and (max-width: 56.25em) and (orientation: landscape) { @content };    //600px
+    }
     @if $breakpoint == tab-port {
         @media only screen and (max-width: 56.25em) { @content };     //900px
     }
     @if $breakpoint == tab-land {
         @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == ipad {
+        @media only screen and (min-width: 62.5em) and (min-height: 81.25em) { @content };    //1000px, w // 1300px h
     }
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em) { @content };    //1800

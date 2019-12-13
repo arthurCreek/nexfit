@@ -17,11 +17,12 @@
 
     @include respond(phone) {
         margin-top: 59px;
-    }
-
-    @include respond(phone){
         background-size: cover;
         background-position: top;
+    }
+
+    @include respond(phone-land) {
+        height: 81vh;
     }
 
     &--sub {
@@ -128,4 +129,10 @@
     @include respond(phone) {
         top: 60%;
     }
+
+    @include respond(phone-land) {
+        top: 80%;
+    }
+
+
 }
