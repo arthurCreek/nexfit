@@ -17,7 +17,7 @@ const Women = () => (
             <div className="gender__container">
                 <div className="gender__row">
                     <div className="gender__image-area">
-                        <img src="/women/jacket/women_mount_parka_dark.jpg" alt="main woman" className="gender-image"/>
+                        <img src="/women/jacket/women_mount_parka_dark_min.jpg" alt="main woman" className="gender-image"/>
                     </div>
                     <div className="gender__text-area">
                         <h3>The Mount Parka</h3>
@@ -29,7 +29,7 @@ const Women = () => (
 
                 <div className="gender__row">
                     <div className="gender__image-area">
-                        <img src="/women/jacket/women_oakley_jacket_dark.jpg" alt="main woman" className="gender-image"/>
+                        <img src="/women/jacket/women_oakley_jacket_dark_min.jpg" alt="main woman" className="gender-image"/>
                     </div>
                     <div className="gender__text-area">
                         <h3>The Oakley Jacket</h3> 
@@ -40,7 +40,7 @@ const Women = () => (
 
                 <div className="gender__row">
                     <div className="gender__image-area">
-                        <img src="/women/jacket/women_enduring_jacket_dark.jpg" alt="main woman" className="gender-image"/>
+                        <img src="/women/jacket/women_enduring_jacket_dark_min.jpg" alt="main woman" className="gender-image"/>
                     </div>
                     <div className="gender__text-area">
                         <h3>The Enduring Jacket</h3> 
@@ -51,7 +51,7 @@ const Women = () => (
 
                 <div className="gender__row">
                     <div className="gender__image-area">
-                        <img src="/women/mid_layer/women_explore_zip_dark.jpg" alt="men about woman" className="gender-image"/>
+                        <img src="/women/mid_layer/women_explore_zip_dark_min.jpg" alt="men about woman" className="gender-image"/>
                     </div>
                     <div className="gender__text-area">
                         <h3>The Explore Zip</h3>
@@ -62,7 +62,7 @@ const Women = () => (
 
                 <div className="gender__row">
                     <div className="gender__image-area">
-                        <img src="/women/bottoms/women_enduring_dark.jpg" alt="men about woman" className="gender-image"/>
+                        <img src="/women/bottoms/women_enduring_dark_min.jpg" alt="men about woman" className="gender-image"/>
                     </div>
                     <div className="gender__text-area">
                         <h3>The Enduring Pant</h3>
@@ -73,7 +73,7 @@ const Women = () => (
 
                 <div className="gender__row">
                     <div className="gender__image-area">
-                        <img src="/women/bottoms/women_leggings.jpg" alt="men about woman" className="gender-image"/>
+                        <img src="/women/bottoms/women_leggings_min.jpg" alt="men about woman" className="gender-image"/>
                     </div>
                     <div className="gender__text-area">
                         <h3>The Leggings</h3>
@@ -84,7 +84,7 @@ const Women = () => (
 
                 <div className="gender__row">
                     <div className="gender__image-area">
-                        <img src="/tee.jpg" alt="men about woman" className="gender-image"/>
+                        <img src="/tee_min.jpg" alt="men about woman" className="gender-image"/>
                     </div>
                     <div className="gender__text-area">
                         <h3>The Tee</h3>
@@ -95,7 +95,7 @@ const Women = () => (
 
                 <div className="gender__row">
                     <div className="gender__image-area">
-                        <img src="/beanie_gray.jpg" alt="men about woman" className="gender-image"/>
+                        <img src="/beanie_gray_min.jpg" alt="men about woman" className="gender-image"/>
                     </div>
                     <div className="gender__text-area">
                         <h3>The Beanie</h3>
@@ -106,7 +106,7 @@ const Women = () => (
 
                 <div className="gender__row">
                     <div className="gender__image-area">
-                        <img src="/women/accessories/women_mittens.jpg" alt="men about woman" className="gender-image"/>
+                        <img src="/women/accessories/women_mittens_min.jpg" alt="men about woman" className="gender-image"/>
                     </div>
                     <div className="gender__text-area">
                         <h3>The Mitten</h3>
