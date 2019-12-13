@@ -32,6 +32,7 @@ body {
             box-sizing: border-box;
     color: #090C0E;
     font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
 
     @include respond(phone) {
         overflow-x: hidden;
