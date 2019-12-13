@@ -20,6 +20,17 @@
 
 .btn-add-remove {
     width: 30px;
+    border: none;
+    background-color: $color-orange;
+    color: white;
+    padding: .5rem;
+    font-weight: bold;
+    font-size: .8em;
+    cursor: pointer;
+}
+
+.btn-add-remove:hover {
+    background-color: $color-orange-darker;
 }
 
 .btn-checkout {
