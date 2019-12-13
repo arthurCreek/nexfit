@@ -15,6 +15,10 @@
         height: 60vh;
     }
 
+    @include respond(phone) {
+        margin-top: 59px;
+    }
+
     @include respond(phone){
         background-size: cover;
         background-position: top;

@@ -7,10 +7,18 @@
     width: 100%;
     z-index: 3;
 
+    @include respond(phone) {
+        min-height: 60px;
+    }
+
     &__menu-logo {
         cursor: pointer;
         height: 50px;
         width: 40px;
+
+        @include respond(phone) {
+            height: 40px;
+        }
     }
 
     &__shopping-cart {
@@ -24,6 +32,10 @@
     font-size: 5em;
     font-weight: bold;
     letter-spacing: 3px;
+
+    @include respond(phone) {
+        font-size: 4em;
+    }
 }
 
 .header__container {
@@ -33,6 +45,10 @@
     padding-left: 2rem;
     padding-right: 2rem;
     min-height: 80px;
+
+    @include respond(phone) {
+        min-height: 60px;
+    }
     
 }
 

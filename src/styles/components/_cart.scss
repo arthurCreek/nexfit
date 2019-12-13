@@ -134,6 +134,10 @@
         padding: 18px 0 80px;
         transition: right .3s ease-out;
 
+        @include respond(phone) {
+            width: 300px;
+        }
+
         &-close {
             margin-left: 18px;
         }
