@@ -8,7 +8,7 @@ const WomenExploreZip = () => {
     const name = 'The Explore Zip';
     const cost = 119;
     const [colorSelected, setColorSelected] = useState('dark');
-    const [imgSrc, setImgSrc] = useState('/women/mid_layer/women_explore_zip_dark.jpg');
+    const [imgSrc, setImgSrc] = useState('/women/mid_layer/women_explore_zip_dark_min.jpg');
     const [size, setProductSize] = useState('xs');
 
     function addItemToCart() {
@@ -89,15 +89,15 @@ const WomenExploreZip = () => {
             switch (e.target.value) {
                 case 'dark':
                     setColorSelected('dark');
-                    setImgSrc('/women/mid_layer/women_explore_zip_dark.jpg');
+                    setImgSrc('/women/mid_layer/women_explore_zip_dark_min.jpg');
                     break;
                 case 'blue':
                     setColorSelected('blue');
-                    setImgSrc('/women/mid_layer/women_explore_zip_blue.jpg');
+                    setImgSrc('/women/mid_layer/women_explore_zip_blue_min.jpg');
                     break;
                 case 'pink':
                     setColorSelected('pink');
-                    setImgSrc('/women/mid_layer/women_explore_zip_pink.jpg');
+                    setImgSrc('/women/mid_layer/women_explore_zip_pink_min.jpg');
                     break;
                 default:
                     break;

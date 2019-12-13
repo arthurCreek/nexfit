@@ -23,13 +23,13 @@ const WomensBottoms = () => (
                         <Link href="/womens/bottoms/enduring-pant"><a className="home__link home__link--item">SHOP ENDURING</a></Link>
                     </div>
                     <div className="home__image-area">
-                        <img src="/women/bottoms/enduring_main.jpg" alt="main woman" className="home-image"/>
+                        <img src="/women/bottoms/enduring_main_min.jpg" alt="main woman" className="home-image"/>
                     </div>
                 </div>
 
                 <div className="home__row">
                     <div className="home__image-area">
-                        <img src="/women/bottoms/leggings_main.jpg" alt="main woman" className="home-image"/>
+                        <img src="/women/bottoms/leggings_main_min.jpg" alt="main woman" className="home-image"/>
                     </div>
                     <div className="home__text-area home__text-area--men">
                         <h3>The Leggings</h3>
