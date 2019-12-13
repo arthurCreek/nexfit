@@ -9,7 +9,7 @@ const MenExploreZip = () => {
     const name = 'The Explore Zip';
     const cost = 119;
     const [colorSelected, setColorSelected] = useState('dark');
-    const [imgSrc, setImgSrc] = useState('/men/mid_layer/explore_zip_dark.jpg');
+    const [imgSrc, setImgSrc] = useState('/men/mid_layer/explore_zip_dark_min.jpg');
     const [size, setProductSize] = useState('s');
 
     function addItemToCart() {
@@ -90,15 +90,15 @@ const MenExploreZip = () => {
             switch (e.target.value) {
                 case 'dark':
                     setColorSelected('dark');
-                    setImgSrc('/men/mid_layer/explore_zip_dark.jpg');
+                    setImgSrc('/men/mid_layer/explore_zip_dark_min.jpg');
                     break;
                 case 'blue':
                     setColorSelected('blue');
-                    setImgSrc('/men/mid_layer/explore_zip_blue.jpg');
+                    setImgSrc('/men/mid_layer/explore_zip_blue_min.jpg');
                     break;
                 case 'green':
                     setColorSelected('green');
-                    setImgSrc('/men/mid_layer/explore_zip_green.jpg');
+                    setImgSrc('/men/mid_layer/explore_zip_green_min.jpg');
                     break;
                 default:
                     break;

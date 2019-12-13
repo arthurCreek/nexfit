@@ -10,7 +10,7 @@ const MenEnduringPant = () => {
     const name = 'The Enduring Pant';
     const cost = 179;
     const [colorSelected, setColorSelected] = useState('dark');
-    const [imgSrc, setImgSrc] = useState('/men/bottoms/men_enduring_dark.jpg');
+    const [imgSrc, setImgSrc] = useState('/men/bottoms/men_enduring_dark_min.jpg');
     const [size, setProductSize] = useState('s');
 
     function addItemToCart() {
@@ -91,11 +91,11 @@ const MenEnduringPant = () => {
             switch (e.target.value) {
                 case 'dark':
                     setColorSelected('dark');
-                    setImgSrc('/men/bottoms/men_enduring_dark.jpg');
+                    setImgSrc('/men/bottoms/men_enduring_dark_min.jpg');
                     break;
                 case 'brown':
                     setColorSelected('brown');
-                    setImgSrc('/men/bottoms/men_enduring_brown.jpg');
+                    setImgSrc('/men/bottoms/men_enduring_brown_min.jpg');
                     break;
                 default:
                     break;

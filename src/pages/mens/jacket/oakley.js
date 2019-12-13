@@ -9,7 +9,7 @@ const MenOakleyJacket = () => {
     const name = 'The Oakley Jacket';
     const cost = 199;
     const [colorSelected, setColorSelected] = useState('dark');
-    const [imgSrc, setImgSrc] = useState('/men/jacket/men_oakley_jacket_dark.jpg');
+    const [imgSrc, setImgSrc] = useState('/men/jacket/men_oakley_jacket_dark_min.jpg');
     const [size, setProductSize] = useState('s');
 
     function addItemToCart() {
@@ -90,15 +90,15 @@ const MenOakleyJacket = () => {
             switch (e.target.value) {
                 case 'dark':
                     setColorSelected('dark');
-                    setImgSrc('/men/jacket/men_oakley_jacket_dark.jpg');
+                    setImgSrc('/men/jacket/men_oakley_jacket_dark_min.jpg');
                     break;
                 case 'blue':
                     setColorSelected('blue');
-                    setImgSrc('/men/jacket/men_oakley_jacket_blue.jpg');
+                    setImgSrc('/men/jacket/men_oakley_jacket_blue_min.jpg');
                     break;
                 case 'green':
                     setColorSelected('green');
-                    setImgSrc('/men/jacket/men_oakley_jacket_green.jpg');
+                    setImgSrc('/men/jacket/men_oakley_jacket_green_min.jpg');
                     break;
                 default:
                     break;

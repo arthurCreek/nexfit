@@ -9,7 +9,7 @@ const MenAppoloVest = () => {
     const name = 'The Apollo Vest';
     const cost = 119;
     const [colorSelected, setColorSelected] = useState('brown');
-    const [imgSrc, setImgSrc] = useState('/men/mid_layer/apollo_vest.jpg');
+    const [imgSrc, setImgSrc] = useState('/men/mid_layer/apollo_vest_min.jpg');
     const [size, setProductSize] = useState('s');
 
     function addItemToCart() {
@@ -90,7 +90,7 @@ const MenAppoloVest = () => {
             switch (e.target.value) {
                 case 'brown':
                     setColorSelected('brown');
-                    setImgSrc('/men/mid_layer/apollo_vest.jpg');
+                    setImgSrc('/men/mid_layer/apollo_vest_min.jpg');
                     break;
                 default:
                     break;

@@ -23,7 +23,7 @@ const MensBottoms = () => (
                         <Link href="/mens/bottoms/enduring-pant"><a className="home__link home__link--item">SHOP ENDURING</a></Link>
                     </div>
                     <div className="home__image-area">
-                        <img src="/men/bottoms/men_enduring_dark.jpg" alt="main woman" className="home-image"/>
+                        <img src="/men/bottoms/men_enduring_dark_min.jpg" alt="main woman" className="home-image"/>
                     </div>
                 </div>
             </div>

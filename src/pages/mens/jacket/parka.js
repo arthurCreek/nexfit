@@ -9,7 +9,7 @@ const MenParka = () => {
     const name = 'The Mount Parka';
     const cost = 149;
     const [colorSelected, setColorSelected] = useState('dark');
-    const [imgSrc, setImgSrc] = useState('/men/jacket/men_mount_parka_dark.jpg');
+    const [imgSrc, setImgSrc] = useState('/men/jacket/men_mount_parka_dark_min.jpg');
     const [size, setProductSize] = useState('s');
 
     function addItemToCart() {
@@ -90,15 +90,15 @@ const MenParka = () => {
             switch (e.target.value) {
                 case 'dark':
                     setColorSelected('dark');
-                    setImgSrc('/men/jacket/men_mount_parka_dark.jpg');
+                    setImgSrc('/men/jacket/men_mount_parka_dark_min.jpg');
                     break;
                 case 'blue':
                     setColorSelected('blue');
-                    setImgSrc('/men/jacket/men_mount_parka_blue.jpg');
+                    setImgSrc('/men/jacket/men_mount_parka_blue_min.jpg');
                     break;
                 case 'brown':
                     setColorSelected('brown');
-                    setImgSrc('/men/jacket/men_mount_parka_brown.jpg');
+                    setImgSrc('/men/jacket/men_mount_parka_brown_min.jpg');
                     break;
                 default:
                     break;
