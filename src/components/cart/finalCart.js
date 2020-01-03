@@ -3,8 +3,10 @@ import CartContext from '../../context/cart-context';
 import { Link } from 'next/link';
 
 
+/**
+    Final cart before payment
+ */
 const FinalCart = ( {name, size, colorSelected, amount, cost, imgSrc} ) => {
-
 
     return (
         <div className="cart-item__container cart-item__container--final">

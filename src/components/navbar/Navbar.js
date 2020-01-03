@@ -5,11 +5,17 @@ import Link from 'next/link';
 
 const uuidv4 = require('uuid/v4');
 
+/**
+    Navbar will include cart with update item count
+ */
 const Navbar = () => {
     const { items, dispatch } = useContext(CartContext);
     const [totalItems, setTotalItems] = useState(0);
     let total = 0;
 
+    {/* 
+        Set cart item count
+    */}
     useEffect(() => {
         if (items.length > 0) {
             let totalItemTemp = 0;
@@ -21,6 +27,9 @@ const Navbar = () => {
         
     }, [items]);
 
+    {/* 
+        Toggles for responsive design
+    */}
     function cartToggle() {
         document.querySelector('.cart__drawer').classList.toggle('cart__toggle');
     }

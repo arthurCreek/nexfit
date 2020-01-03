@@ -8,6 +8,9 @@ import '../styles/styles.scss';
 const Layout = (props) => {
     const [items, dispatch] = useReducer(cartReducer, []);
 
+    {/* 
+        Retreive items from local storage if stored
+    */}
     useEffect(() => {
         const items = JSON.parse(localStorage.getItem('items'));
 
@@ -16,6 +19,9 @@ const Layout = (props) => {
         }
     }, [])
 
+    {/* 
+        Set cart items based on localstorage
+    */}
     useEffect(() => {
         localStorage.setItem('items', JSON.stringify(items))
     }, [items])

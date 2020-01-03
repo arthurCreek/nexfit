@@ -6,6 +6,9 @@ import { Link } from 'next/link';
 const CartItem = ( {name, size, colorSelected, amount, cost, imgSrc} ) => {
     const { items, dispatch } = useContext(CartContext);
 
+    {/* 
+        Edit single item in cart
+    */}
     function editCartItem(amount) {
         dispatch({
             type: 'EDIT_ITEM',
@@ -20,6 +23,9 @@ const CartItem = ( {name, size, colorSelected, amount, cost, imgSrc} ) => {
         })
     }
 
+    {/* 
+        Remove item quantity
+    */}
     function removeItemFromCart(item) {
         dispatch({
             type: 'REMOVE_ITEM',
@@ -34,6 +40,9 @@ const CartItem = ( {name, size, colorSelected, amount, cost, imgSrc} ) => {
         })
     }
 
+    {/* 
+        Add single item in cart
+    */}
     function addItem() {
         items.forEach(item => {
             if(item.name === name && item.imgSrc === imgSrc && item.size === size) {
@@ -43,6 +52,9 @@ const CartItem = ( {name, size, colorSelected, amount, cost, imgSrc} ) => {
         });
     }
 
+    {/* 
+        Remove quantity from item or remove whole product
+    */}
     function removeItem() {
         items.forEach(item => {
             if(item.name === name && item.imgSrc === imgSrc && item.size === size) {
@@ -57,6 +69,9 @@ const CartItem = ( {name, size, colorSelected, amount, cost, imgSrc} ) => {
         });
     }
 
+    {/* 
+        Remove whole item from cart
+    */}
     function removeItemRow() {
         dispatch({
             type: 'REMOVE_ITEM',

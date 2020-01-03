@@ -4,6 +4,10 @@ import CartContext from '../context/cart-context';
 import Layout from '../components/Layout';
 import App from 'next/app';
 
+
+/**
+    Wrapper for app layout
+ */
 class NexfitApp extends App {
     
 
